@@ -1,64 +1,149 @@
-\documentclass[10pt,a4paper]{article}
-\usepackage[latin1]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+\documentclass[nofootinbib,aps,prd,preprint,superscriptaddress]{revtex4}
+\usepackage{amsmath,graphicx,hyperref}
 \usepackage{slashed}
-\usepackage{graphicx}
-\usepackage{feynmf}
-\graphicspath{ {images/} }
-\setlength{\parindent}{10ex}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Command %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\fms}[1]{{#1}\!\!\!/}
+\newcommand{\fmsl}[1]{{#1}\!\!\!\!/}
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mr}{\mathrm}
+\newcommand{\mP}{\mathcal{P}}
+\newcommand{\mO}{\mathcal{O}}
+
+\newcommand{\be}{\begin{equation}} 
+\newcommand{\ee}{\end{equation}} 
+\newcommand{\beq}{\begin{equation}} 
+\newcommand{\eeq}{\end{equation}} 
+\newcommand{\bea}{\begin{eqnarray}} 
+\newcommand{\eea}{\end{eqnarray}} 
+
+\newcommand{\ov}{\overline}
+\newcommand{\pp}{\perp}
+\newcommand{\dg}{\dagger}
+\newcommand{\n}{\overline{n}}
+\newcommand{\nn}{\frac{\fms{\overline{n}}}{2}} 
+\newcommand{\nnn}{\frac{\fms{n}}{2}} 
+
+\newcommand{\bl}[1]{{\bf{#1}}}
+\newcommand{\bla}[1]{|{\bf{#1}}|}
+\newcommand{\blp}[1]{{\bf{#1}}_{\perp}}
+\newcommand{\blpu}[1]{{\bf{#1}}^{\perp}}
+\newcommand{\blpa}[1]{|{\bf{#1}}_{\perp}|}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\bsp}[1]{{\boldsymbol{#1}}_{\perp}}
+
+\newcommand{\ds}{\displaystyle} 
+\newcommand{\nnb}{\nonumber} 
+
+\newcommand{\as}{\alpha_s} 
+
+\newcommand{\eps}{\epsilon} 
+\newcommand{\veps}{\varepsilon} 
+
+\newcommand{\UV}{\veps_{\mr{UV}}}
+\newcommand{\IR}{\veps_{\mr{IR}}}
+
+\newcommand{\La}{\Lambda^2_{\rm{alg}}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\topmargin 0.0 in
 
 \begin{document}
-		
-	\section{Introduction}
+
+\baselineskip 3.0ex 
+
+\vspace*{18pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Title?}
+
+\def\Pitt{Pittsburgh Particle Physics Astrophysics and Cosmology Center (PITT PACC) \\ Department of Physics and Astronomy, University of Pittsburgh, Pittsburgh, Pennsylvania 15260, USA}
+
+\author{Cameron Mahoney}
+\email[E-mail:]{cbm34@pitt.edu}
+\affiliation{\Pitt}
+\author{Adam K. Leibovich}
+\email[E-mail:]{akl2@pitt.edu}
+\affiliation{\Pitt}
+\author{Andrew R. Zentner}
+\email[E-mail:]{zentner@pitt.edu}
+\affiliation{\Pitt}  
+
+\begin{abstract} 
+\baselineskip 3.0ex   
+Abstract?
+\end{abstract}
+
+\maketitle 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
 	\section{Computational details}
 	The process we are considering, the bremsstrahlung of a dark photon from nucleon-nucleon scattering, is similar in many ways to the classic calculation of axion emission from supernova cooling. The differences arise due to the mass of the dark photon, which can be on the order of the temperature of the supernova.  This leads to different kinematics compared to the axion case.  However, the calculation roughly follows the analogous calculation for axions, as laid out by Raffelt, which we briefly review below. 
 	\subsection{Bremsstrahlung amplitude calculation}
 	 There are two processes to consider: the pp bremsstrahlung $ p+p \rightarrow p+p+A$ and the pn $ p+n \rightarrow p+n+A\ $. For the pp case, there are eight tree-level diagrams, as shown in Fig. ; for the pn, five diagrams, as shown in Fig. . \newline
 	
-Considering first the pp diagrams, each of the $p-p-\pi $ vertices contribute a factor of $ i\gamma_5 g_{pp}$ , where $g_{pp}$ is the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $ g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The internal  pion line contributes a factor of $\frac{-i}{\mathcal{L}^2 - m_\pi^2}$, where $ \mathcal{L} $ is the appropriate exchange momentum.  The two outgoing nucleons each contribute a spinor $ \bar{u}(p_i)$, and the two incoming nucleons contribute a spinor $u(p_i)$. The outgoing boson A with momentum $q_a$ contributes a polarization vector $\epsilon^\mu$, and the $ p-p-A $ vertex contributes $e\epsilon \gamma_\mu$. The internal fermion line, between the $p-p-\pi$ vertex and the $p-p-A$ vertex, contributes a factor of \[ -i\frac{\slashed p_5 + M_N}{p_5^2-M^2_N} \] where $p_5$ is the momentum of the internal fermion. Considering diagram 2 as an example, we have $p_5 = q_a + p_3$, and so $p_5^2 = p_5 \cdot p_5 = q_a^2 + p_3^2 + 2 (q_a \cdot p_3)$, and the factor from the fermion line becomes \[ -i\frac{\slashed p_i \pm \slashed q_a + M_N}{m_A^2 \pm 2 q_a \cdot p_i} \] where the index labels which of the nucleons attaches to the A boson, while the plus sign corresponds to diagrams where it attaches right of the pion vertex, and the minus to diagrams where it attaches left of the pion vertex. Labeling them from one to eight, with the exchange diagrams given odd labels and the direct given even labels, the matrix elements are then
-		 \[ M_1 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed{\epsilon} u(p_1)\]
-%
-	 	\[ M_2 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p3) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed \epsilon  u(p_1) \]
-	%
-	 	\[ M_3 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \epsilon  u(p_2) \]
-%
-	 	\[ M_4 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \epsilon  u(p_2) \]
-%	
-		 \[ M_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-			 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \slashed{\epsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2)\]
-			 %
-		\[ M_6 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-		 		 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \slashed{\epsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2)\]
-			 		 %
- 		 \[ M_7 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-		 		 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \slashed{\epsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1)\]
-			 		 		 %
-		\[ M_8 = \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-		}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1)\]
-		%
-	where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and $ f_{pp} $ is the pseudovector pion-nucleon coupling.
+Considering first the pp diagrams, each of the $p-p-\pi $ vertices contribute a factor of $ i\gamma_5 g_{pp}$ , where $g_{pp}$ is the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $ g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The internal  pion line contributes a factor of $\frac{-i}{\mathcal{L}^2 - m_\pi^2}$, where $ \mathcal{L} $ is the appropriate exchange momentum.  The two outgoing nucleons each contribute a spinor $ \bar{u}(p_i)$, and the two incoming nucleons contribute a spinor $u(p_i)$. The outgoing boson A with momentum $q_a$ contributes a polarization vector $\epsilon^\mu$, and the $ p-p-A $ vertex contributes $e\epsilon \gamma_\mu$. The internal fermion line, between the $p-p-\pi$ vertex and the $p-p-A$ vertex, contributes a factor of 
+\begin{equation} 
+-i\frac{\slashed p_5 + M_N}{p_5^2-M^2_N},
+\end{equation}
+where $p_5$ is the momentum of the internal fermion. Considering diagram 2 as an example, we have $p_5 = q_a + p_3$, and so $p_5^2 = p_5 \cdot p_5 = q_a^2 + p_3^2 + 2 (q_a \cdot p_3)$, and the factor from the fermion line becomes 
+\begin{equation}
+-i\frac{\slashed p_i \pm \slashed q_a + M_N}{m_A^2 \pm 2 q_a \cdot p_i},
+\end{equation}
+where the index labels which of the nucleons attaches to the A boson, while the plus sign corresponds to diagrams where it attaches right of the pion vertex, and the minus to diagrams where it attaches left of the pion vertex. Labeling them from one to eight, with the exchange diagrams given odd labels and the direct given even labels, the matrix elements are then
+\bea
+M_1 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed{\epsilon} u(p_1),\\
+M_2 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p3) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed \epsilon  u(p_1), \\
+M_3 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \epsilon  u(p_2), \\
+M_4 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \epsilon  u(p_2), \\
+M_5 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+			 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \slashed{\epsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
+M_6 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+		 		 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \slashed{\epsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
+M_7 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+		 		 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \slashed{\epsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),\\
+M_8 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+		}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),
+\eea
+where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and $ f_{pp} $ is the pseudovector pion-nucleon coupling.
 
-	The amplitude is then \[  \sum_{spins} \mathcal{M}^2 = \sum_{spins}|M_2+M_4+M_6+M_8-M_1-M_3-M_5-M_7|^2  \]. At this point the calculation diverges from the axionic bremsstrahlung calculation: in the region of the mass of the A boson is not necessarily negligible. The kinematic relations are thus \[ 
-	p_1 \cdot p_2 = M_N^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot q_a\]
-	 \[p_1 \cdot p_3 = M_N^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot q_a\]  
-	 \[p_1 \cdot p_4 = k \cdot l + M_N^2 - \frac{l^2}{2} + p_4 \cdot q_a \]
-	 \[p_2 \cdot p_3 = M_N^2 - \frac{l^2}{2} \]
- 	 \[p_2 \cdot p_4 = M_N^2 - \frac{k^2}{2} \]
- 	 \[p_3 \cdot p_4 = k \cdot l + M_N^2 - \frac{l^2 + k^2}{2} \]
- 	 Unfortunately, with these relations it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression contains some two hundred and fifty terms. 
+The amplitude is then 
+\beq
+\sum_{spins} \mathcal{M}^2 = \sum_{spins}|M_2+M_4+M_6+M_8-M_1-M_3-M_5-M_7|^2.
+\eeq
+At this point the calculation diverges from the axionic bremsstrahlung calculation: in the region of the mass of the A boson is not necessarily negligible. The kinematic relations are thus \bea 
+p_1 \cdot p_2 &=& M_N^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot q_a,\\
+p_1 \cdot p_3 &=& M_N^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot q_a,\\  
+p_1 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2}{2} + p_4 \cdot q_a, \\
+p_2 \cdot p_3 &=& M_N^2 - \frac{l^2}{2}, \\
+p_2 \cdot p_4 &=& M_N^2 - \frac{k^2}{2},\\
+p_3 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2 + k^2}{2}
+\eea
+ Unfortunately, with these relations it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression contains some two hundred and fifty terms. 
  	 
- 	 For the pn interaction the calculation proceeds similarly, with the only new matrix element coming from diagram five, bremsstrahlung off the internal pion 
- 	 \[ M_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \epsilon}{l^2-m_\pi^2
- 	 }  \frac{1}{(l-q_a)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (q_a - 2l)\cdot \epsilon \]
-	This amplitude too is unwieldy.  
+ For the pn interaction the calculation proceeds similarly, with the only new matrix element coming from diagram five, bremsstrahlung off the internal pion 
+ \beq
+ M_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \epsilon}{l^2-m_\pi^2
+ 	 }  \frac{1}{(l-q_a)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (q_a - 2l)\cdot \epsilon
+\eeq
+This amplitude too is unwieldy.  
 	
 
 	\subsection{Streaming limit}
@@ -66,37 +151,74 @@ Considering first the pp diagrams, each of the $p-p-\pi $ vertices contribute a 
 
 	The actual quantity of interest therefore is the rate of energy emission through dark bosons. From the spin-summed amplitudes already found this is obtained by integrating over the phase space, and adding a factor of energy
 
-	\[ Q_i = \int (2\pi)^4 E_A \sum_{spins} \mathcal{M}^2_i f(p_1) f(p_2)\delta(p_1+p_2-p_3-p_4-q_a) dLIPS \]
-	Here $ E_A $ is the energy of the emitted boson, and $ f(p) $ are the initial occupation numbers. The nucleons in the core are comfortably non-degenerate and non-relativistic, so  the Pauli blocking factor is omitted and the Maxwell-Boltzmann distribution used  \[ f(p) =  \frac{n_b}{2} (\frac{2 \pi}{M_N T})^{3/2} e^{-\frac{\textbf{p}^2} {2 M_N T}} \]
+\beq
+Q_i = \int (2\pi)^4 E_A \sum_{spins} \mathcal{M}^2_i f(p_1) f(p_2)\delta(p_1+p_2-p_3-p_4-q_a) dLIPS.
+\eeq
+Here $ E_A $ is the energy of the emitted boson, and $ f(p) $ are the initial occupation numbers. The nucleons in the core are comfortably non-degenerate and non-relativistic, so  the Pauli blocking factor is omitted and the Maxwell-Boltzmann distribution used  
+\beq
+	f(p) =  \frac{n_b}{2} (\frac{2 \pi}{M_N T})^{3/2} e^{-\frac{\textbf{p}^2} {2 M_N T}}.
+\eeq
 	
-	This integration is performed numerically to obtain $ Q_i $, which is the rate of energy emission per unit volume associated with either the pn or pp process. To obtain the dark gauge boson luminosity, it is assumed that production takes place in a core volume of radius 1 km, so $ \mathcal{L}_A = V(Q_{pp} + Q_{pn}) $. $ \mathcal{L}_A $ is a complicated function of $ m_A $ and $ T $, but is simply proportional to the square of the parameter $ \epsilon $; pulling that out of the expression gives a constraint \[ \epsilon^2 I_A(m_A, T) \le \mathcal{L}_\nu \] or a bound on the coupling of \[ \epsilon \le \sqrt{\frac{4.1 * 10^{37} MeV^2}{I_A(m_A, T)}} \] and the exclusion region is generated by varying the mass. 
+This integration is performed numerically to obtain $ Q_i $, which is the rate of energy emission per unit volume associated with either the pn or pp process. To obtain the dark gauge boson luminosity, it is assumed that production takes place in a core volume of radius 1 km, so $ \mathcal{L}_A = V(Q_{pp} + Q_{pn}) $. $ \mathcal{L}_A $ is a complicated function of $ m_A $ and $ T $, but is simply proportional to the square of the parameter $ \epsilon $; pulling that out of the expression gives a constraint 
+\beq
+\epsilon^2 I_A(m_A, T) \le \mathcal{L}_\nu
+\eeq
+or a bound on the coupling of 
+\beq 
+\epsilon \le \sqrt{\frac{4.1 * 10^{37} MeV^2}{I_A(m_A, T)}} 
+\eeq 
+and the exclusion region is generated by varying the mass. 
 
-	\subsection{Decay limit}
-	The constraint from the streaming limit above provides an upper bound on the allowed coupling and lower bound on the excluded coupling by considering purely production. Naively it might be expected that this suffices, that all higher couplings are excluded. However, in order to function as a cooling channel, obviously enough of the produced light gauge bosons must escape the supernova. As the coupling increases, so do processes that prevent this,and so the excluded region has an upper bound, above which the luminosity again drops below the neutrino luminosity. The first such limit may be found by considering decay of the dark bosons into Standard Model particles, and assuming that these SM particles are trapped in the supernova core and contribute nothing to the cooling. The dark boson has a typical lifetime of 
-	\[ l = \frac{3 E_{A}}{N_{eff} m_A^2 \epsilon^2}  \]
-	and so the fraction escaping the supernova is given by 
-	\[ e^{\frac{r_{decay}}{l}} = e^{\frac{r_{decay} N_{eff} m_A^2 \epsilon^2}{3 E_A}} \] To take this into account, the above exponential factor is simply appended to the phase space integrand, and the calculation then proceeds as before. The limit is derived from the same equation, with the only complication being the fact that $ I_A $ is now a function of $ \epsilon $, in addition to $ m_A, T $. This makes the numerical calculation slightly more complicated, but otherwise changes nothing of importance. 
-	 \[ \epsilon \le \sqrt{\frac{4.1 * 10^{37} MeV^2}{I_A(m_A, T, \epsilon)}} \]
+\subsection{Decay limit}
+The constraint from the streaming limit above provides an upper bound on the allowed coupling and lower bound on the excluded coupling by considering purely production. Naively it might be expected that this suffices, that all higher couplings are excluded. However, in order to function as a cooling channel, obviously enough of the produced light gauge bosons must escape the supernova. As the coupling increases, so do processes that prevent this,and so the excluded region has an upper bound, above which the luminosity again drops below the neutrino luminosity. The first such limit may be found by considering decay of the dark bosons into Standard Model particles, and assuming that these SM particles are trapped in the supernova core and contribute nothing to the cooling. The dark boson has a typical lifetime of 
+\beq
+l = \frac{3 E_{A}}{N_{eff} m_A^2 \epsilon^2},
+\eeq
+and so the fraction escaping the supernova is given by 
+\beq
+e^{\frac{r_{decay}}{l}} = e^{\frac{r_{decay} N_{eff} m_A^2 \epsilon^2}{3 E_A}}.
+\eeq
+To take this into account, the above exponential factor is simply appended to the phase space integrand, and the calculation then proceeds as before. The limit is derived from the same equation, with the only complication being the fact that $ I_A $ is now a function of $ \epsilon $, in addition to $ m_A, T $. This makes the numerical calculation slightly more complicated, but otherwise changes nothing of importance. 
+\beq
+\epsilon \le \sqrt{\frac{4.1 * 10^{37} MeV^2}{I_A(m_A, T, \epsilon)}}.
+\eeq
 	
 	
-	\subsection{Trapping limit}
-	The second constraint that produces an upper bound on the excluded region comes from considering trapping of dark bosons within the supernova. With a large enough coupling, the new particles will thermalize and then be emitted from a spherical shell. In this case the luminosity is given simply by the Steffan-Boltzmann law
-	\[ \mathcal{L}_t  = 4\pi r^2 T_A^4 \sigma\]
-	where $ r $ is now the radius of the emitting shell and $ T_A $ its temperature. These must typically be calculated, but for $ r $ it is safe to assume a value of 10 km, since the density of the supernova drops drastically around that point. After taking that value for r, the bound on the luminosity translates into a bound on $ T_A $ \[ T_A \le 9.586 MeV \] That bound can then be translated into the desired bound on the coupling as a function of mass by assuming that the particles are emitted from an optical depth $ \tau = \frac{2}{3} $, and finding the temperature that corresponds to that optical depth. This is a somewhat involved calculation.
-	First, one needs a model for the density and temperature in the supernova. Following \cite{dent}, we assume \[ \rho = \rho_p (\frac{R}{r})^2 \] \[ T = T_R (\frac{R}{r})^{n/3} \]
-	with $  \rho_p  = 3*10^{14} g/cm^3, T_R = 30$ MeV, and taking $ n = 5 $. The optical depth is given by \[ \tau = \int_{r_x}^{\infty} \kappa \rho dr \]where $ \kappa is the opacity $. 
-	To find the opacity, we start from the reduced mean Rosseland opacity \[ \frac{1}{\kappa \rho} = \int_{m_x}^{\infty} \frac{15}{4 \pi^4 T^5} \frac{E_A^2 e^{E_A/T} \sqrt{E_A^2 - m_A^2}}{(e^{E_A/T}-1)^2} l_A dE_A \]where $ l_A $ is the mean free path. 
+\subsection{Trapping limit}
+The second constraint that produces an upper bound on the excluded region comes from considering trapping of dark bosons within the supernova. With a large enough coupling, the new particles will thermalize and then be emitted from a spherical shell. In this case the luminosity is given simply by the Steffan-Boltzmann law
+\beq
+\mathcal{L}_t  = 4\pi r^2 T_A^4 \sigma,
+\eeq
+where $ r $ is now the radius of the emitting shell and $ T_A $ its temperature. These must typically be calculated, but for $ r $ it is safe to assume a value of 10 km, since the density of the supernova drops drastically around that point. After taking that value for r, the bound on the luminosity translates into a bound on $ T_A $ 
+\beq
+T_A \le 9.586 MeV.
+\eeq
+That bound can then be translated into the desired bound on the coupling as a function of mass by assuming that the particles are emitted from an optical depth $ \tau = \frac{2}{3} $, and finding the temperature that corresponds to that optical depth. This is a somewhat involved calculation.
+First, one needs a model for the density and temperature in the supernova. Following \cite{dent}, we assume 
+\bea
+\rho &=& \rho_p (\frac{R}{r})^2,\\
+T &=& T_R (\frac{R}{r})^{n/3},
+\eea
+with $  \rho_p  = 3*10^{14} g/cm^3, T_R = 30$ MeV, and taking $ n = 5 $. The optical depth is given by 
+\beq
+\tau = \int_{r_x}^{\infty} \kappa \rho dr,
+\eeq
+where $ \kappa$ is the opacity.  To find the opacity, we start from the reduced mean Rosseland opacity 
+\beq
+\frac{1}{\kappa \rho} = \int_{m_x}^{\infty} \frac{15}{4 \pi^4 T^5} \frac{E_A^2 e^{E_A/T} \sqrt{E_A^2 - m_A^2}}{(e^{E_A/T}-1)^2} l_A dE_A,
+\eeq
+where $ l_A $ is the mean free path. 
 	
-	The inverse mean free path can readily be obtained by modifying $ Q_i $, the expression for the energy loss rate, as follows: removing the factor of $ E_A $ and the phase space integral over $ q_A $, and adding a factor of $ e^{E_A/T} $ for detailed balance. This gives the inverse mean free path as a function of mass and coupling. Again the required integration is performed numerically. This then allows the calculation of $ \kappa_x $. The inverse opacities for the pn and pp processes add, giving the total opacity $ \kappa^{-1} = \kappa_{pp}^{-1} + \kappa_{pn}^{-1} $
+The inverse mean free path can readily be obtained by modifying $ Q_i $, the expression for the energy loss rate, as follows: removing the factor of $ E_A $ and the phase space integral over $ q_A $, and adding a factor of $ e^{E_A/T} $ for detailed balance. This gives the inverse mean free path as a function of mass and coupling. Again the required integration is performed numerically. This then allows the calculation of $ \kappa_x $. The inverse opacities for the pn and pp processes add, giving the total opacity $ \kappa^{-1} = \kappa_{pp}^{-1} + \kappa_{pn}^{-1} $
 	
-	Having obtained an expression for $ \kappa $, we can now find the optical depth
+Having obtained an expression for $ \kappa $, we can now find the optical depth
 	[note to self: rework the steps here; too confusing]
-	and the bound on the coupling is finally found by requiring  $ \tau_R(\epsilon,m_A) \le 2/3 $
+and the bound on the coupling is finally found by requiring  $ \tau_R(\epsilon,m_A) \le 2/3 $
 	
 	
 	
 	\section{Computational details}
-	In every case calculating the bound requires integrating an expression involving the long and complicated Bremsstrahlung amplitude, which unfortunately could not be done analytically without making unjustified approximations. The integration was consequently performed numerically using the Monte Carlo routines provided by the Cuba library. Employing kinematic relations did not seem to reduce the complexity of the problem, so in the interests of reducing the number of possible mistakes the kinematics were done by brute force. We integrated over the entire phase space explicitly in terms of the eleven variables of $ \vec{p_1}, \vec{p_2}, \vec{p_3}, \hat{q_a} $, then fixed $ p_4 $ using the 3-momentum part of the delta-function and used an unpleasantly complicated equation obtained from the energy delta-function to fix the remaining one free momentum amplitude - in our case we chose this to be $ q_a $, the momentum of the emitted boson. At each step points resulting in unphysical configurations were discarded, and the remaining points were then plugged in to the appropriate amplitude, and then that result used as the integrand. The numerical integration routine used was the \textit{Suave} method provided by CUBA, which combines importance sampling and adaptive subdivision; this method seemed to provide the best compromise between computation time and error. 
+In every case calculating the bound requires integrating an expression involving the long and complicated Bremsstrahlung amplitude, which unfortunately could not be done analytically without making unjustified approximations. The integration was consequently performed numerically using the Monte Carlo routines provided by the Cuba library. Employing kinematic relations did not seem to reduce the complexity of the problem, so in the interests of reducing the number of possible mistakes the kinematics were done by brute force. We integrated over the entire phase space explicitly in terms of the eleven variables of $ \vec{p_1}, \vec{p_2}, \vec{p_3}, \hat{q_a} $, then fixed $ p_4 $ using the 3-momentum part of the delta-function and used an unpleasantly complicated equation obtained from the energy delta-function to fix the remaining one free momentum amplitude - in our case we chose this to be $ q_a $, the momentum of the emitted boson. At each step points resulting in unphysical configurations were discarded, and the remaining points were then plugged in to the appropriate amplitude, and then that result used as the integrand. The numerical integration routine used was the \textit{Suave} method provided by CUBA, which combines importance sampling and adaptive subdivision; this method seemed to provide the best compromise between computation time and error. 
 	
 	Once the integration is complete the calculation of the trapping and streaming limits is a straightforward application of the equations previously derived, and proceeded as outlined above. The decay limit is somewhat harder, since $ \epsilon $ appears on both sides of the equation. Again we employed an unsubtle approach to solving the problem: $ \epsilon $ was set to an arbitrary value where the constraint was satisfied, and then iteratively reduced until the constraint was no longer satisfied. This obviously introduces another source of error, but with a sufficiently small interval in $ \epsilon $ this is negligible. The one further slight complication is that at after a certain value of $ M_A $ the decay limit rapidly goes to zero, at which point the procedure was terminated.
 	
@@ -117,4 +239,25 @@ Considering first the pp diagrams, each of the $p-p-\pi $ vertices contribute a 
 %		J.B. Dent, F. Ferrer, L. M. Krauss, 2012, arXiv:1201.2683
 		
 %	\end{thebibliography}
+\end{document}\acknowledgments
+
+AKL was supported in part by NSF grant PHY-1519175.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{thebibliography}{99}
+%\normalsize
+
+
+
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
