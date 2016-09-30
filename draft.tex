@@ -95,33 +95,14 @@ Abstract?
 
 
 \section{Computational details}
+	simple energy loss calculation 
+	
 	The process we are considering, the bremsstrahlung of a dark photon from nucleon-nucleon scattering, is similar in many ways to the classic calculation of axion emission from supernova cooling. The differences arise due to the mass of the dark photon, which can be on the order of the temperature of the supernova.  This leads to different kinematics compared to the axion case.  However, the calculation roughly follows the analogous calculation for axions, as laid out by Raffelt, which we briefly review below.  As in the classical axion calculation, we will use the one-pion exchange (OPE) approximation.  
 	
 \subsection{Bremsstrahlung amplitude calculation}
-	 There are two processes to consider: the $pp$ scattering with the bremsstrahlung of the dark photon, $ p+p \rightarrow p+p+A$, and the $pn$ scattering with bremsstrahlung, $ p+n \rightarrow p+n+A\ $. For the $pp$ case there are eight tree-level diagrams, with the emission of the $A'$ from each of the external legs, as shown in Fig. , while for the $pn$ case there are five diagrams, including when the $A'$ is emitted from the exchanged charged pion, as shown in Fig. .
+	 There are two processes to consider: the $pp$ scattering with the bremsstrahlung of the dark photon off the proton, $ p+p \rightarrow p+p+A$, and the $pn$ scattering with bremsstrahlung off the proton or the charged pion, $ p+n \rightarrow p+n+A\ $. For the $pp$ case there are eight tree-level diagrams, with the emission of the $A'$ from each of the external legs, as shown in Fig. , while for the $pn$ case there are five diagrams, including when the $A'$ is emitted from the exchanged pion, as shown in Fig. .
 	
-The calculation of these diagrams are straightforward, using standard Feynman rules.  Each of the $p-p-\pi $ vertices contribute a factor of $g_{pp}$,  the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The $ p-p-A' $ vertex contributes $e\epsilon \gamma_\mu$, where $\epsilon$ is the mixing strength between the photon and dark photon. Labeling the contributions according to the Feynman diagrams in Fig. , the matrix elements are 
-\bea
-M_1 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed{\varepsilon} u(p_1),\\
-M_2 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p3) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed \varepsilon  u(p_1), \\
-M_3 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \varepsilon  u(p_2), \\
-M_4 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-	 	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \varepsilon  u(p_2), \\
-M_5 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-			 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \slashed{\varepsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
-M_6 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-		 		 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \slashed{\varepsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
-M_7 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
-		 		 }  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \slashed{\varepsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),\\
-M_8 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
-		}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\varepsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),
-\eea
-where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and the dark photon's polarization is given by $\varepsilon$.  Note that these matrix elements agree with Ref.~\cite{Dent:2012mx}.
-
-At this point the calculation diverges from the axion bremsstrahlung calculation, since in the kinematic region of interest for supernova explosions, the mass of the $A'$ boson is not necessarily negligible. The kinematic relations are thus \bea 
+The calculation of these diagrams is straightforward, and is described in the appendix. Having obtained the diagrams the calculation diverges from the axion bremsstrahlung calculation, since in the kinematic region of interest for supernova explosions the mass of the $A'$ boson is not necessarily negligible. The kinematic relations are thus \bea 
 p_1 \cdot p_2 &=& M_N^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot q_a,\\
 p_1 \cdot p_3 &=& M_N^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot q_a,\\  
 p_1 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2}{2} + p_4 \cdot q_a, \\
@@ -233,7 +214,35 @@ The calculation is dependent on a number of constants. We chose the following va
 Both approaches produce constraints that are significantly weaker than the previous work, and that largely reproduce constraints already obtained from beam dump experiments. The squared matrix element obtained from the full one-pion-exchange in the end agrees quite well with that obtained using the approximations appropriate for axionic calculations; the reduction in the bremsstrahlung rate apparently results from significant changes to the phase space when the exact kinematics are used. The effective field theory calculation weakens the constraint by a further order of magnitude, and this difference between the EFT and OPE constraints results only from a difference in the matrix element calculated from each. It's well-known that the OPE model ignores effects related to chiral symmetry, and these evidently serve to reduce the bremsstrahlung rate considerably. Although there is some question as to the applicability of the simple pionless EFT at the highest masses considered, but at that point even significant deviation would not change the overall conclusion.
 
 \section{Discussion/Conclusion}	
-	
+
+\appendix
+\section{Bremsstrahlung diagrams}
+	Each of the $p-p-\pi $ vertices contribute a factor of $g_{pp}$,  the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The $ p-p-A' $ vertex contributes $e\epsilon \gamma_\mu$, where $\epsilon$ is the mixing strength between the photon and dark photon. Labeling the contributions according to the Feynman diagrams in Fig. , the matrix elements are 
+	\bea
+	M_1 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed{\varepsilon} u(p_1),\\
+	M_2 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p3) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed \varepsilon  u(p_1), \\
+	M_3 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \varepsilon  u(p_2), \\
+	M_4 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \varepsilon  u(p_2), \\
+	M_5 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \slashed{\varepsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
+	M_6 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \slashed{\varepsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
+	M_7 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{l^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \slashed{\varepsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),\\
+	M_8 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \epsilon}{k^2-m_\pi^2
+	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\varepsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),
+	\eea
+	where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and the dark photon's polarization is given by $\varepsilon$. 
+	For $pn$ scattering, four of the diagrams are simply the $ M_1, M_2, M_3, M_4 $ given above, with the only new Feynman diagram coming from bremsstrahlung off the internal pi, resulting in  
+	 \beq
+	 M'_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \epsilon}{l^2-m_\pi^2
+	 }  \frac{1}{(l-q_a)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (q_a - 2l)\cdot \varepsilon
+	 \eeq
+	 Note that these matrix elements agree with Ref.~\cite{Dent:2012mx}.
 \acknowledgments
 
 AKL was supported in part by NSF grant PHY-1519175.
