@@ -95,7 +95,6 @@ Abstract?
 
 
 \section{Computational details}
-	simple energy loss calculation 
 	
 	The process we are considering, the bremsstrahlung of a dark photon from nucleon-nucleon scattering, is similar in many ways to the classic calculation of axion emission from supernova cooling. The differences arise due to the mass of the dark photon, which can be on the order of the temperature of the supernova.  This leads to different kinematics compared to the axion case.  However, the calculation roughly follows the analogous calculation for axions, as laid out by Raffelt, which we briefly review below.  As in the classical axion calculation, we will use the one-pion exchange (OPE) approximation.  
 	
@@ -110,22 +109,13 @@ p_2 \cdot p_3 &=& M_N^2 - \frac{l^2}{2}, \\
 p_2 \cdot p_4 &=& M_N^2 - \frac{k^2}{2},\\
 p_3 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2 + k^2}{2}.
 \eea
-Unfortunately, with these relations it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression for the spin-averaged squared matrix element, $ \mathcal{M}^2_{pp}$, contains some two hundred and fifty terms, and thus we do not reproduce that result here.\footnote{At this point we diverge from Ref.~\cite{Dent:2012mx} for two reasons.  One, they use the kinematics as if the $A'$ were massless, as in the axion calculation, and independent of that choice, their squared matrix element does not respect the correct exchange symmetry, as can be seen by inspection of their Eq. (A.3), with their claim that only the coefficient $C_k$ appearing in that equation is nonzero.}
-
- 
- 	 
- For the $pn$ scattering, the calculation proceeds similarly, with the only new Feynman diagram coming from bremsstrahlung off the internal pi, resulting in  
- \beq
- M'_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \epsilon}{l^2-m_\pi^2
- 	 }  \frac{1}{(l-q_a)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (q_a - 2l)\cdot \varepsilon
-\eeq
-Again, due to the more complicated kinematics due to the non-negligible mass of the $A'$, the resulting squared amplitude, $ \mathcal{M}^2_{pn}$, is too unwieldy to reproduce here.
+Unfortunately, with these relations it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression for the spin-averaged squared matrix element, $ \mathcal{M}^2_{pp}$, contains some two hundred and fifty terms, and thus we do not reproduce that result here. The pn calculation likewise results in a very large and unwieldy expression for $ \mathcal{M}^2_{pn}$. \footnote{At this point we diverge from Ref.~\cite{Dent:2012mx} for two reasons.  One, they use the kinematics as if the $A'$ were massless, as in the axion calculation, and independent of that choice, their squared matrix element does not respect the correct exchange symmetry, as can be seen by inspection of their Eq. (A.3), with their claim that only the coefficient $C_k$ appearing in that equation is nonzero.}
 
 
 \subsection{Streaming limit}
 The first and simplest bound that may be obtained arises from assuming that all produced particles leave the supernova, carrying their energy with them. The constraint is derived simply by requiring that the energy loss through this cooling channel be roughly less than the cooling from neutrino emission; any greater, and it would have an observable effect on supernova cooling.
 
-The actual quantity of interest therefore is the rate of energy emission through dark bosons. From the spin-summed squared amplitudes already given, this is obtained by integrating over the phase space, and adding a factor of energy
+The actual quantity of interest therefore is the rate of energy emission through dark bosons. From the spin-summed squared amplitudes already found, this is obtained by integrating over the phase space, and adding a factor of energy of the emitted particle.
 \beq
 Q_i = \int (2\pi)^4 E_A \sum_{spins} \mathcal{M}^2_i f(p_1) f(p_2)\delta(p_1+p_2-p_3-p_4-q_a) d\Pi,
 \eeq
@@ -160,7 +150,7 @@ To take this into account, the above exponential factor is simply appended to th
 	
 	
 \subsection{Trapping limit}
-The second constraint that produces an upper bound on the excluded region comes from considering trapping of dark bosons within the supernova. With a large enough coupling, the new particles will thermalize and then they will be emitted from a spherical shell.  In this case the luminosity is given simply by the Steffan-Boltzmann law
+The second constraint that produces an upper bound on the excluded region comes from considering trapping of dark bosons within the supernova. With a large enough coupling, the new particles will thermalize and then will be emitted from a spherical shell.  In this case the luminosity is given simply by the Steffan-Boltzmann law
 \beq
 \mathcal{L}_t  = 4\pi r^2 T_A^4 \sigma,
 \eeq
@@ -207,13 +197,19 @@ The calculation is dependent on a number of constants. We chose the following va
 \section{Results}
 
 \begin{figure}[h!]
-\includegraphics[height=9cm]{ope_bound.eps}
-\caption{CAPTION}
+\includegraphics[height=9cm]{stages.eps}
+\caption{The changes in the bounds generated as each stage of the calculation departs from Ref.~\cite{Dent:2012mx}. Interestingly the kinematics have apparently relatively little effect.}
 \end{figure}
 
-Both approaches produce constraints that are significantly weaker than the previous work, and that largely reproduce constraints already obtained from beam dump experiments. The squared matrix element obtained from the full one-pion-exchange in the end agrees quite well with that obtained using the approximations appropriate for axionic calculations; the reduction in the bremsstrahlung rate apparently results from significant changes to the phase space when the exact kinematics are used. The effective field theory calculation weakens the constraint by a further order of magnitude, and this difference between the EFT and OPE constraints results only from a difference in the matrix element calculated from each. It's well-known that the OPE model ignores effects related to chiral symmetry, and these evidently serve to reduce the bremsstrahlung rate considerably. Although there is some question as to the applicability of the simple pionless EFT at the highest masses considered, but at that point even significant deviation would not change the overall conclusion.
+\begin{figure}[h!]
+	\includegraphics[height=9cm]{endtoend.png}
+	\caption{A comparison of the final result for the excluded region with the result from Ref.~\cite{Dent:2012mx}. The excluded region is clearly significantly less restrictive, and opens up the region of parameter space for $\epsilon \approx  1e-8-9 $.}
+\end{figure}
+
 
 \section{Discussion/Conclusion}	
+	The revised approach produce constraints that are significantly weaker than the previous work, and that largely reproduce constraints already obtained from beam dump experiments. 
+
 
 \appendix
 \section{Bremsstrahlung diagrams}
@@ -237,7 +233,7 @@ Both approaches produce constraints that are significantly weaker than the previ
 	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\varepsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),
 	\eea
 	where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and the dark photon's polarization is given by $\varepsilon$. 
-	For $pn$ scattering, four of the diagrams are simply the $ M_1, M_2, M_3, M_4 $ given above, with the only new Feynman diagram coming from bremsstrahlung off the internal pi, resulting in  
+	For $pn$ scattering, four of the diagrams are simply the same as those given above. The only new Feynman diagram comes from bremsstrahlung off the internal pion, and results in  
 	 \beq
 	 M'_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \epsilon}{l^2-m_\pi^2
 	 }  \frac{1}{(l-q_a)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (q_a - 2l)\cdot \varepsilon
