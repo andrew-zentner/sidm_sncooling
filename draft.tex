@@ -101,6 +101,7 @@ Abstract?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%------------------------- Introduction ---
 \section{Introduction}
 
 A nearly overwhelming preponderance of observational evidence indicates that a form of nonrelativistic, nonbaryonic, 
@@ -125,15 +126,47 @@ bosons ($M \lesssim 100$~GeV) can be constrained astrophysically using supernova
 SN1987A. Light gauge bosons will be produced within the hot supernovae core and 
 radiated from the supernova. This non-standard energy loss mechanism can result in an energy loss rate 
 from the supernova core that is inconsistent with observations of SN1987A, analogous to the 
-classic constraint on axions \cite{raffelt96_book}. Constraints on SIDM from this mechanism 
-were already considered by \cite{dent_etal12} and \cite{rrapaj_reddy16}. 
+classic constraint on axions \cite{raffelt96_book}. This mechanism was already exploited by 
+\cite{dent_etal12} (and \cite{rrapaj_reddy16}, with a slight modification) (\arz{Cameron, add others of which you may be aware.}) 
+to constraint dark photon models of SIDM in which the self-interaction arises from a Yukawa potential and the 
+vector boson is kinetically mixed with the standard model photon.
 
 
+As we mentioned above, we find SN1987A constraints on dark photon SIDM models that are considerably different 
+from those of \cite{dent_etal12}. If correct, this has important consequences. The Snowmass white paper by Kaplinghat, 
+Tulin, and Yu \cite{kaplinghat_etal13_whitepaper} nicely summarizes a variety of constraints on dark photon models of 
+SIDM. One point that is clear from Ref.~\cite{kaplinghat_etal13_whitepaper} is that there is only a narrow range of 
+viable photon mixing parameters that can lead to production of SIDM in the early universe, while evading all constraints, 
+including the constraint of \cite{dent_etal12}. Our results suggest that the SN1987A constraints from Ref.~\cite{dent_etal12} 
+are too restrictive. The less restrictive constraints that we quote open up a space of unrestricted mixing parameters that 
+ranges over two orders of magnitude. Interestingly, the parameter space opened by our updated constraints corresponds to a 
+space that may a significant impact on cosmological structure formation, particularly the structures of dark matter halos and galaxies. 
 
 
-This calculation was done in Ref.~\cite{dent_etal12} Using the one-pion exchange model of nucleon-nucleon interactions\footnote{There is also some question as to the applicability of this approach in this regime. Pionless effective field theory techniques developed for low-energy nucleons might provide a more accurate answer; this may be considered in a later paper} they largely followed the form of the calculation of the axionic bremsstrahlung rate [brinkmann/turner/iwamoto], in which the axion is taken to be massless. Considering the energy scales in the problem, this is clearly a reasonable approximation when dealing with axion masses on the order of $ 10^-3 $ eV; it is less clear that it is still appropriate when dealing with dark photon masses on the order of 10-100 MeV. We therefore reproduce the calculation without making that simplifying assumption, and see if it has an effect on the result. We find that it does indeed quite dramatically change the excluded region in $ \eps-m_A $ space, increasing the lower bound by some two orders of magnitude and opening up a considerable portion of the parameter space. 
+The discrepancy between our result and that of Ref.~\cite{dent_etal12} is due to several factors. First, it is straightforward to 
+demonstrate that the kinematical relationships in given in Appendix A of Ref.~\cite{dent_etal12} are incorrect. Second, the 
+squared matrix elements given in Eq.~(A3) and Eq.~(C18) of Ref.~\cite{dent_etal12} are incorrect. Our squared matrix elements 
+are considerably more complicated. There appear to be a number of errors that led to the incorrect squared matrix elements in 
+Ref.~\cite{dent_etal12}. At the very least, these errors include simplification using the incorrect kinematics and neglect of the 
+mass of the gauge boson (which, while legitimate for the $\sim$meV-mass axion, is not justified in this context). Additional 
+discrepancies must be present, the causes of which are not apparent from the exposition, 
+because the squared matrix elements in Eq.~(A3) and Eq.~(C18) of Ref.~\cite{dent_etal12} 
+do not obey the correct symmetries under interchange of the incoming or outgoing baryon momenta. 
+Given these errors, we suggest that our results should supercede these previously-published constraints.
 
+The remainder of this paper is organized as follows. In Section~\ref{section:model}, we discuss 
+dark photon models. We describe our calculation of SN1987A constraints on SIDM in 
+Section~\ref{section:computational} and present our primary results in Section~\ref{section:results}. 
+We summarize our work and draw conclusions in Section~\ref{section:conclusions}. 
+
+%---- Model Details
+\section{Dark Photon Model of SIDM}
+\label{section:model}
+
+
+%----- Computational Details
 \section{Computational details}
+\label{section:computational}
 	
 	The process we are considering, the bremsstrahlung of a dark photon from nucleon-nucleon scattering, is similar in many ways to the classic calculation of axion emission from supernova cooling. The differences arise due to the mass of the dark photon, which can be on the order of the temperature of the supernova.  This leads to different kinematics compared to the axion case.  However, the calculation roughly follows the analogous calculation for axions, as laid out by Raffelt, which we briefly review below.  As in the classical axion calculation, we will use the one-pion exchange (OPE) approximation.  
 	
@@ -224,7 +257,7 @@ and the bound on the coupling is finally found by requiring  $ \tau_x(\epsilon,m
 	
 	
 	
-\section{Computational details}
+\subsection{Phase Space Integration}
 In every case calculating the bound requires integrating an expression involving the long and complicated Bremsstrahlung amplitude, which unfortunately could not be done analytically without making unjustified approximations. The integration was consequently performed numerically using the Monte Carlo routines provided by the Cuba library. Employing kinematic relations did not seem to reduce the complexity of the problem, so in the interests of reducing the number of possible mistakes the kinematics were done by brute force. We integrated over the entire phase space explicitly in terms of the eleven variables of $ \vec{p_1}, \vec{p_2}, \vec{p_3}, \hat{q_a} $, then fixed $ p_4 $ using the 3-momentum part of the delta-function and used an unpleasantly complicated equation obtained from the energy delta-function to fix the remaining one free momentum amplitude - in our case we chose this to be $ q_a $, the momentum of the emitted boson. At each step points resulting in unphysical configurations were discarded, and the remaining points were then plugged in to the appropriate amplitude, and then that result used as the integrand. The numerical integration routine used was the \textit{Suave} method provided by CUBA, which combines importance sampling and adaptive subdivision; this method seemed to provide the best compromise between computation time and error. 
 	
 Once the integration is complete the calculation of the trapping and streaming limits is a straightforward application of the equations previously derived, and proceeded as outlined above. The decay limit is somewhat harder, since $ \epsilon $ appears on both sides of the equation. Again we employed an unsubtle approach to solving the problem: $ \epsilon $ was set to an arbitrary value where the constraint was satisfied, and then iteratively reduced until the constraint was no longer satisfied. This obviously introduces another source of error, but with a sufficiently small interval in $ \epsilon $ this is negligible. The one further slight complication is that at after a certain value of $ M_A $ the decay limit rapidly goes to zero, at which point the procedure was terminated.
@@ -233,7 +266,10 @@ We then scanned over the desired range of values for $ M_A $ and output the thre
 
 The calculation is dependent on a number of constants. We chose the following values as roughly typical of supernovae: T, the temperature of the supernova core, was set to 30 MeV; r, the radius of the supernova core, to 1 km; $ R $, the distance at which decay products are trapped, to 10 km; $ \mathcal{L} $, the luminosity bound, to $ 10^{53} erg/s $; and $ \n_b $, the baryon number density in the supernova interior, to $ 1.79*10^{38} cm^{-3} $. 
 
+
+%-------------------- RESULTS
 \section{Results}
+\label{section:results}
 
 \begin{figure}[th]
 \includegraphics[width=9cm]{stages.eps}
@@ -248,10 +284,16 @@ Let's put some text here.
 \end{figure}
 
 
-\section{Discussion/Conclusion}	
+%--------------------------- CONCLUSIONS
+\section{Discussion and Conclusions}
+\label{section:conclusions}
+
+
 	The revised approach produce constraints that are significantly weaker than the previous work, and that largely reproduce constraints already obtained from beam dump experiments. 
 
 
+
+%------------ APPENDIX
 \appendix
 \section{Bremsstrahlung diagrams}
 	Each of the $p-p-\pi $ vertices contribute a factor of $g_{pp}$,  the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The $ p-p-A' $ vertex contributes $e\epsilon \gamma_\mu$, where $\epsilon$ is the mixing strength between the photon and dark photon. Labeling the contributions according to the Feynman diagrams in Fig. , the matrix elements are 
