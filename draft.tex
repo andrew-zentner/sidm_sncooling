@@ -43,7 +43,8 @@
 \newcommand{\ds}{\displaystyle} 
 \newcommand{\nnb}{\nonumber} 
 
-\newcommand{\as}{\alpha_s} 
+\newcommand{\as}{\alpha_s}
+\newcommand{\qa}{q_{A'}}
 
 \newcommand{\eps}{\varepsilon} 
 \newcommand{\veps}{\varepsilon} 
@@ -196,22 +197,56 @@ primary aim of this paper.
 
 
 %----- Computational Details
-\section{Computational details}
+\section{Methods}
 \label{section:computational}
 	
-	The process we are considering, the bremsstrahlung of a dark photon from nucleon-nucleon scattering, is similar in many ways to the classic calculation of axion emission from supernova cooling. The differences arise due to the mass of the dark photon, which can be on the order of the temperature of the supernova.  This leads to different kinematics compared to the axion case.  However, the calculation roughly follows the analogous calculation for axions, as laid out by Raffelt, which we briefly review below.  As in the classical axion calculation, we will use the one-pion exchange (OPE) approximation.  
+We aim to estimate the rate of energy loss from the core of a supernova from $A'$ brehmsstrahlung 
+during nucleon-nucleon interactions. The calculation is analogous to the well-known estimate of axion 
+emission from supernova cores described in Ref.~\cite{raffelt96_book} and references therein, but is 
+more complicated because the mass of the $A'$, unlike the mass of the axion, is not necessarily 
+negligible. This section describes the calculation of the rate of energy loss from a supernova core 
+from $A'$ brehmsstrahlung. 
+
+The brehmsstrahlung process is not the only process with which we must be concerned. Clearly, the rate of 
+brehmsstrahlung will increase with $\varepsilon$; however, $\varepsilon$ can become sufficiently large 
+that the radiated gauge bosons do not escape the supernova. This happens if the $A'$ either decay to 
+standard model particles or interact with standard model particles prior to exiting the supernova core. 
+In either case, the energy is not lost and the $A'$ does not provide a cooling channel for the supernova. 
+Consequently, for a given $m_{A'}$, there is a maximum $\varepsilon$ that can be constrained in this 
+manner. We estimate $A'$ decay and scattering probabilities, and the upper limits on the $\varepsilon$ 
+constraints in this section as well. 
+
 	
 \subsection{Bremsstrahlung amplitude calculation}
-	 There are two processes to consider: the $pp$ scattering with the bremsstrahlung of the dark photon off the proton, $ p+p \rightarrow p+p+A$, and the $pn$ scattering with bremsstrahlung off the proton or the charged pion, $ p+n \rightarrow p+n+A\ $. For the $pp$ case there are eight tree-level diagrams, with the emission of the $A'$ from each of the external legs, as shown in Fig. , while for the $pn$ case there are five diagrams, including when the $A'$ is emitted from the exchanged pion, as shown in Fig. .
+
+
+There are two processes to consider in order to estimate the rate of energy loss via $A'$ brehmsstrahlung. The first is  
+proton-proton (pp) scattering with the bremsstrahlung of the dark photon off the proton; $p+p \rightarrow p+p+A$. The 
+second is proton-neutron (pn) scattering with bremsstrahlung off of either the proton or the charged pion; 
+$p+n \rightarrow p+n+A$. We estimate the rates for these processes using the one-pion exchange (OPE) 
+approximation for nucleon interactions. In the pp case, there are eight tree-level diagrams, 
+with the emission of the $A'$ from each of the external legs, while for the pn case, there are five diagrams, 
+including a diagram in which the $A'$ is emitted from the exchanged pion. These diagrams are shown 
+correctly in Fig. 3 and Fig. 4 of Ref.~\cite{dent_etal12}.
 	
-The calculation of these diagrams is straightforward, and is described in the appendix. Having obtained the diagrams the calculation diverges from the axion bremsstrahlung calculation, since in the kinematic region of interest for supernova explosions the mass of the $A'$ boson is not necessarily negligible. The kinematic relations are thus \bea 
+Evaluating these diagrams is tedious, but very straightforward. We give further details in Appendix~\ref{appendix:details}. 
+The calculation differs from the well-known axion bremsstrahlung calculation, because the mass of the $A'$ boson is not 
+necessarily negligible in the kinematic region of interest for supernova explosions.
+The correct kinematical relations are 
+%
+\bea 
 p_1 \cdot p_2 &=& M_N^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot q_a,\\
 p_1 \cdot p_3 &=& M_N^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot q_a,\\  
 p_1 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2}{2} + p_4 \cdot q_a, \\
 p_2 \cdot p_3 &=& M_N^2 - \frac{l^2}{2}, \\ 
 p_2 \cdot p_4 &=& M_N^2 - \frac{k^2}{2},\\
-p_3 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2 + k^2}{2}.
+p_3 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2 + k^2}{2},
 \eea
+%
+where $p_1$ and $p_2$ are the four-momenta of the incoming nucleons, $p_3$ and $p_4$ are the momenta 
+of the outgoing nucleons, $\qa$ is the $A'$ momentum, $k=p_2 - p_3$, $l=p_2 - p_4$, and $M_{\mathrm{N}}$ 
+is the nucleon mass. These kinematical relations correct the relations in Ref.~\cite{dent_etal12}.
+
 Unfortunately, with these relations it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression for the spin-averaged squared matrix element, $ \mathcal{M}^2_{pp}$, contains some two hundred and fifty terms, and thus we do not reproduce that result here. The pn calculation likewise results in a very large and unwieldy expression for $ \mathcal{M}^2_{pn}$. \footnote{At this point we diverge from Ref.~\cite{dent_etal12} for two reasons.  One, they use the kinematics as if the $A'$ were massless, as in the axion calculation, and independent of that choice, their squared matrix element does not respect the correct exchange symmetry, as can be seen by inspection of their Eq. (A.3), with their claim that only the coefficient $C_k$ appearing in that equation is nonzero.}
 
 
@@ -333,6 +368,8 @@ than "1e-09" and so on? Can we make the axis labels and tick mark labels larger?
 
 %------------ APPENDIX
 \appendix
+\label{appendix:details}
+
 \section{Bremsstrahlung diagrams}
 	Each of the $p-p-\pi $ vertices contribute a factor of $g_{pp}$,  the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The $ p-p-A' $ vertex contributes $e\varepsilon \gamma_\mu$, where $\varepsilon$ is the mixing strength between the photon and dark photon. Labeling the contributions according to the Feynman diagrams in Fig. , the matrix elements are 
 	\bea
