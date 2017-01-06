@@ -1,6 +1,7 @@
 \documentclass[nofootinbib,prd,superscriptaddress,twocolumn]{revtex4}
 \usepackage{amsmath,graphicx,hyperref}
 \usepackage{slashed}
+\usepackage{feynmp}
 \usepackage{epstopdf}
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
@@ -180,7 +181,7 @@ The kinetic mixing, through a term
 $\frac{1}{2}\frac{\varepsilon}{\sqrt{1+\varepsilon^2}}\, \widetilde{F}_{\mu \nu}\widetilde{F}'^{\mu \nu}$ 
 in the Lagrangian causes the $\widetilde{A}$ to be an admixture of the massless photon $A$, 
 and the dark photon $A'$, 
-of mass $m_{\mathrm{A'}} = m_{\mathrm{\widetilde{A}'}} \sqrt{1 + \varepsilon^2} \simeq m_{\widetilde{A}'}$ because 
+of mass $m_{\mathrm{A'}} = m_{\mathrm{\widetilde{A}'}} \sqrt{1 + \varepsilon^2} \simeq m_\mathrm{{\widetilde{A}'}}$ because 
 the viable parameter range has $\varepsilon \ll 1$. The dark matter particles are thereby coupled 
 to the standard model fermions with a coupling constant $\varepsilon q$, 
 where $\varepsilon$ is the kinetic mixing parameter. The first term in this 
@@ -225,21 +226,33 @@ proton-proton (pp) scattering with the bremsstrahlung of the dark photon off the
 second is proton-neutron (pn) scattering with bremsstrahlung off of either the proton or the charged pion; 
 $p+n \rightarrow p+n+A$. We estimate the rates for these processes using the one-pion exchange (OPE) 
 approximation for nucleon interactions. In the pp case, there are eight tree-level diagrams, 
-with the emission of the $A'$ from each of the external legs, while for the pn case, there are five diagrams, 
-including a diagram in which the $A'$ is emitted from the exchanged pion. These diagrams are shown 
-correctly in Fig. 3 and Fig. 4 of Ref.~\cite{dent_etal12}.
+with the emission of the $A'$ from each of the external legs. One of these diagrams is shown 
+in Fig.~\ref{fig:ppdiagram}; the remaining seven diagrams come from placing the radiated $A'$ 
+on each of the other three protons and then, for each of these, interchanging the outgoing momenta. 
+For the pn case, there are five diagrams, four of which are analogous to the pp diagram shown in 
+Fig.~\ref{fig:ppdiagram}. The fifth diagram, shown in Fig.~\ref{fig:npdiagram}, corresponds to 
+emission of the $A'$ from the exchanged, charged pion.
+
+%-------------- PP Feynman Diagram
+\begin{figure}
+\includegraphics[width=8cm]{ppdiagram.pdf}
+\caption{One of the eight Feynman diagrams for the pp process. Three of the other diagrams are obtained by 
+placing the $A'$ on each of the protons in turn. The remaining four diagrams come from swapping the outgoing 
+momenta.}
+\label{fig:ppdiagram}
+\end{figure}
 	
-Evaluating these diagrams is tedious, but very straightforward. We give further details in Appendix~\ref{appendix:details}. 
-The calculation differs from the well-known axion bremsstrahlung calculation, because the mass of the $A'$ boson is not 
+Evaluating these diagrams is tedious, but very straightforward. The calculation differs 
+from the well-known axion bremsstrahlung calculation, because the mass of the $A'$ boson is not 
 necessarily negligible in the kinematic region of interest for supernova explosions.
 The correct kinematical relations are 
 %
 \bea 
-p_1 \cdot p_2 &=& M_N^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot q_a,\\
-p_1 \cdot p_3 &=& M_N^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot q_a,\\  
-p_1 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2}{2} + p_4 \cdot q_a, \\
+p_1 \cdot p_2 &=& M_N^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot \qa,\\
+p_1 \cdot p_3 &=& M_N^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot \qa,\\  
+p_1 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2}{2} + p_4 \cdot \qa, \\
 p_2 \cdot p_3 &=& M_N^2 - \frac{l^2}{2}, \\ 
-p_2 \cdot p_4 &=& M_N^2 - \frac{k^2}{2},\\
+p_2 \cdot p_4 &=& M_N^2 - \frac{k^2}{2},\quad \mathrm{and}\\
 p_3 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2 + k^2}{2},
 \eea
 %
@@ -247,7 +260,53 @@ where $p_1$ and $p_2$ are the four-momenta of the incoming nucleons, $p_3$ and $
 of the outgoing nucleons, $\qa$ is the $A'$ momentum, $k=p_2 - p_3$, $l=p_2 - p_4$, and $M_{\mathrm{N}}$ 
 is the nucleon mass. These kinematical relations correct the relations in Ref.~\cite{dent_etal12}.
 
-Unfortunately, with these relations it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression for the spin-averaged squared matrix element, $ \mathcal{M}^2_{pp}$, contains some two hundred and fifty terms, and thus we do not reproduce that result here. The pn calculation likewise results in a very large and unwieldy expression for $ \mathcal{M}^2_{pn}$. \footnote{At this point we diverge from Ref.~\cite{dent_etal12} for two reasons.  One, they use the kinematics as if the $A'$ were massless, as in the axion calculation, and independent of that choice, their squared matrix element does not respect the correct exchange symmetry, as can be seen by inspection of their Eq. (A.3), with their claim that only the coefficient $C_k$ appearing in that equation is nonzero.}
+\arz{Cameron, can you double check this. I think there were some errors in the momenta and in the relative 
+signs of the diagrams. I tried to fixe them.}
+The eight diagrams contribute the following eight terms to the pp amplitude, 
+%
+\begin{widetext}
+\begin{eqnarray}
+	M_1 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_1} 
+	\bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \gamma_5 (\slashed{p}_1 - \qa +M_N)\slashed \epsilon  u(p_1), \\
+	M_2 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_1} 
+	\bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p_4) \gamma_5 (\slashed{p}_1 - \qa +M_N)\slashed{\epsilon} u(p_1),\\
+	M_3 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_2} 
+	\bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p_4) \gamma_5 (\slashed{p}_2 - \qa +M_N)\slashed \epsilon  u(p_2), \\
+	M_4 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_2} 
+	\bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) \gamma_5 (\slashed{p}_2 - \qa +M_N)\slashed \epsilon  u(p_2), \\
+	M_5 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_3} 
+	\bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p_4) \slashed{\epsilon} (\slashed{p}_3 + \qa +M_N)\gamma_5 u(p_2),\\
+	M_6 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_3} 
+	\bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_3 + \qa +M_N)\gamma_5 u(p_2),\\
+	M_7 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_4} 
+	\bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_1),\\
+	M_8 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_4} 
+	\bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p_4) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_1),\\
+\end{eqnarray}
+\end{widetext}
+%
+where the dark photon polarization is given by $\epsilon$. The squared amplitude is given by 
+%
+\begin{equation}
+\vert \mathcal{M}_{\mathrm{pp}} \vert^2 = \sum_{s_1,s_2}\, \left\vert \sum_{i=1}^{8}\, M_i \right\vert^2, 
+\end{equation}
+%
+where the first summation is over the incoming proton polarizations. Unfortunately, with the kinematical relations above, 
+the squared amplitude does not yield a tidy expression for the spin-averaged squared matrix element. Our result 
+contains over 200 terms, so we do not reproduce it here for reasons of convenience. However, we note that 
+our result for $\vert \mathcal{M}_{\mathrm{pp}} \vert^2$ is symmetric under exchange of $k$ and $l$ as required. 
+
+ it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression for the spin-averaged squared matrix element, $ \mathcal{M}^2_{pp}$, contains some two hundred and fifty terms, and thus we do not reproduce that result here. The pn calculation likewise results in a very large and unwieldy expression for $ \mathcal{M}^2_{pn}$. \footnote{At this point we diverge from Ref.~\cite{dent_etal12} for two reasons.  One, they use the kinematics as if the $A'$ were massless, as in the axion calculation, and independent of that choice, their squared matrix element does not respect the correct exchange symmetry, as can be seen by inspection of their Eq. (A.3), with their claim that only the coefficient $C_k$ appearing in that equation is nonzero.}
+
+
+%-------------- NP Feynman Diagram
+\begin{figure}
+\includegraphics[width=8cm]{npdiagram.pdf}
+\caption{One of the five Feynman diagrams for the np process. This particular diagram shows 
+internal brehmsstrahlung off of the charged pion. The remaining four diagrams are analogous to the 
+pp diagram shown in Fig.~\ref{fig:ppdiagram}.}
+\label{fig:npdiagram}
+\end{figure}
 
 
 \subsection{Streaming limit}
@@ -255,7 +314,7 @@ The first and simplest bound that may be obtained arises from assuming that all 
 
 The actual quantity of interest therefore is the rate of energy emission through dark bosons. From the spin-summed squared amplitudes already found, this is obtained by integrating over the phase space, and adding a factor of energy of the emitted particle.
 \beq
-Q_i = \int (2\pi)^4 E_A \sum_{spins} \mathcal{M}^2_i f(p_1) f(p_2)\delta(p_1+p_2-p_3-p_4-q_a) d\Pi,
+Q_i = \int (2\pi)^4 E_A \sum_{spins} \mathcal{M}^2_i f(p_1) f(p_2)\delta(p_1+p_2-p_3-p_4-\qa) d\Pi,
 \eeq
 where $d\Pi$ is the Lorentz-invariant phase space, $ E_A $ is the energy of the emitted boson, and $ f(p) $ are the initial occupation numbers. The nucleons in the core are comfortably non-degenerate and non-relativistic, so  the Pauli blocking factor is omitted and the Maxwell-Boltzmann distribution is used  
 \beq
@@ -312,7 +371,7 @@ where $ \kappa$ is the opacity.  To find the opacity, we start from the reduced 
 \eeq
 where $ l_A $ is the mean free path. 
 	
-The inverse mean free path can readily be obtained by modifying $ Q_i $, the expression for the energy loss rate, as follows: removing the factor of $ E_A $ and the phase space integral over $ q_A $, and adding a factor of $ e^{E_A/T} $ for detailed balance. This gives the inverse mean free path as a function of mass and coupling. Again the required integration is performed numerically. This then allows the calculation of $ \kappa_x $. The inverse opacities for the $pn$ and $pp$ processes add, giving the total opacity $ \kappa^{-1} = \kappa_{pp}^{-1} + \kappa_{pn}^{-1} $
+The inverse mean free path can readily be obtained by modifying $ Q_i $, the expression for the energy loss rate, as follows: removing the factor of $ E_A $ and the phase space integral over $ \qa $, and adding a factor of $ e^{E_A/T} $ for detailed balance. This gives the inverse mean free path as a function of mass and coupling. Again the required integration is performed numerically. This then allows the calculation of $ \kappa_x $. The inverse opacities for the $pn$ and $pp$ processes add, giving the total opacity $ \kappa^{-1} = \kappa_{pp}^{-1} + \kappa_{pn}^{-1} $
 	
 Having obtained an expression for $ \kappa $, we can now find the optical depth as follows: define a new quantity $ \tau_R = \kappa_R \rho_R R $. We then have 
 \beq \kappa \rho R = \tau_R (\frac{\rho}{\rho_R})^2 (\frac{T_R}{T})^{3/2}  \eeq
@@ -324,7 +383,7 @@ and the bound on the coupling is finally found by requiring  $ \tau_x(\varepsilo
 	
 	
 \subsection{Phase Space Integration}
-In every case calculating the bound requires integrating an expression involving the long and complicated Bremsstrahlung amplitude, which unfortunately could not be done analytically without making unjustified approximations. The integration was consequently performed numerically using the Monte Carlo routines provided by the Cuba library. Employing kinematic relations did not seem to reduce the complexity of the problem, so in the interests of reducing the number of possible mistakes the kinematics were done by brute force. We integrated over the entire phase space explicitly in terms of the eleven variables of $ \vec{p_1}, \vec{p_2}, \vec{p_3}, \hat{q_a} $, then fixed $ p_4 $ using the 3-momentum part of the delta-function and used an unpleasantly complicated equation obtained from the energy delta-function to fix the remaining one free momentum amplitude - in our case we chose this to be $ q_a $, the momentum of the emitted boson. At each step points resulting in unphysical configurations were discarded, and the remaining points were then plugged in to the appropriate amplitude, and then that result used as the integrand. The numerical integration routine used was the \textit{Suave} method provided by CUBA, which combines importance sampling and adaptive subdivision; this method seemed to provide the best compromise between computation time and error. 
+In every case calculating the bound requires integrating an expression involving the long and complicated Bremsstrahlung amplitude, which unfortunately could not be done analytically without making unjustified approximations. The integration was consequently performed numerically using the Monte Carlo routines provided by the Cuba library. Employing kinematic relations did not seem to reduce the complexity of the problem, so in the interests of reducing the number of possible mistakes the kinematics were done by brute force. We integrated over the entire phase space explicitly in terms of the eleven variables of $ \vec{p_1}, \vec{p_2}, \vec{p_3}, \hat{\qa} $, then fixed $ p_4 $ using the 3-momentum part of the delta-function and used an unpleasantly complicated equation obtained from the energy delta-function to fix the remaining one free momentum amplitude - in our case we chose this to be $ \qa $, the momentum of the emitted boson. At each step points resulting in unphysical configurations were discarded, and the remaining points were then plugged in to the appropriate amplitude, and then that result used as the integrand. The numerical integration routine used was the \textit{Suave} method provided by CUBA, which combines importance sampling and adaptive subdivision; this method seemed to provide the best compromise between computation time and error. 
 	
 Once the integration is complete the calculation of the trapping and streaming limits is a straightforward application of the equations previously derived, and proceeded as outlined above. The decay limit is somewhat harder, since $ \varepsilon $ appears on both sides of the equation. Again we employed an unsubtle approach to solving the problem: $ \varepsilon $ was set to an arbitrary value where the constraint was satisfied, and then iteratively reduced until the constraint was no longer satisfied. This obviously introduces another source of error, but with a sufficiently small interval in $ \varepsilon $ this is negligible. The one further slight complication is that at after a certain value of $ M_A $ the decay limit rapidly goes to zero, at which point the procedure was terminated.
 	
@@ -371,30 +430,11 @@ than "1e-09" and so on? Can we make the axis labels and tick mark labels larger?
 \label{appendix:details}
 
 \section{Bremsstrahlung diagrams}
-	Each of the $p-p-\pi $ vertices contribute a factor of $g_{pp}$,  the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The $ p-p-A' $ vertex contributes $e\varepsilon \gamma_\mu$, where $\varepsilon$ is the mixing strength between the photon and dark photon. Labeling the contributions according to the Feynman diagrams in Fig. , the matrix elements are 
-	\bea
-	M_1 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed{\varepsilon} u(p_1),\\
-	M_2 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_1} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p3) \gamma_5 (\slashed{p}_1 - q_a +M_N)\slashed \varepsilon  u(p_1), \\
-	M_3 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \varepsilon  u(p_2), \\
-	M_4 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 - 2 q_a \cdot p_2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \gamma_5 (\slashed{p}_2 - q_a +M_N)\slashed \varepsilon  u(p_2), \\
-	M_5 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p3) \slashed{\varepsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
-	M_6 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_3} \bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p4) \slashed{\varepsilon} (\slashed{p}_3 + q_a +M_N)\gamma_5 u(p_2),\\
-	M_7 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p4) \slashed{\varepsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),\\
-	M_8 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2
-	}  \frac{1}{m_{A^\prime}^2 + 2 q_a \cdot p_4} \bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\varepsilon} (\slashed{p}_4 + q_a +M_N)\gamma_5 u(p_1),
-	\eea
-	where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and the dark photon's polarization is given by $\varepsilon$. 
+	Each of the $p-p-\pi $ vertices contribute a factor of $g_{pp}$,  the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The $ p-p-A' $ vertex contributes $e\varepsilon \gamma_\mu$, where $\varepsilon$ is the mixing strength between the photon and dark photon. Labeling the contributions according to the Feynman diagrams in Fig. , the matrix elements are where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and the dark photon's polarization is given by $\epsilon$. 
 	For $pn$ scattering, four of the diagrams are simply the same as those given above. The only new Feynman diagram comes from bremsstrahlung off the internal pion, and results in  
 	 \beq
 	 M'_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \varepsilon}{l^2-m_\pi^2
-	 }  \frac{1}{(l-q_a)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (q_a - 2l)\cdot \varepsilon
+	 }  \frac{1}{(l-\qa)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (\qa - 2l)\cdot \varepsilon
 	 \eeq
 	 Note that these matrix elements agree with Ref.~\cite{dent_etal12}.
 \acknowledgments
