@@ -281,7 +281,7 @@ The eight diagrams contribute the following eight terms to the pp amplitude,
 	M_7 &=& \frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_4} 
 	\bar{u}(p_4) \gamma_5 u(p_2) \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_1),\\
 	M_8 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{pp}^2 e \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_4} 
-	\bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p_4) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_1),\\
+	\bar{u}(p_3) \gamma_5 u(p_2) \bar{u}(p_4) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_1),
 \end{eqnarray}
 \end{widetext}
 %
@@ -291,12 +291,27 @@ where the dark photon polarization is given by $\epsilon$. The squared amplitude
 \vert \mathcal{M}_{\mathrm{pp}} \vert^2 = \sum_{s_1,s_2}\, \left\vert \sum_{i=1}^{8}\, M_i \right\vert^2, 
 \end{equation}
 %
-where the first summation is over the incoming proton polarizations. Unfortunately, with the kinematical relations above, 
-the squared amplitude does not yield a tidy expression for the spin-averaged squared matrix element. Our result 
+where the first summation is over the incoming proton polarizations. These expressions are identical to those 
+given in Ref.~\cite{dent_etal12}; however, they do not simplify significantly if the correct kinematics are used. 
+Unfortunately, with the kinematical relations above, the squared amplitude does not yield a tidy expression 
+for the spin-averaged squared matrix element. Our result 
 contains over 200 terms, so we do not reproduce it here for reasons of convenience. However, we note that 
 our result for $\vert \mathcal{M}_{\mathrm{pp}} \vert^2$ is symmetric under exchange of $k$ and $l$ as required. 
 
- it does not seem to be possible to simplify the amplitude into an analytically usable form without making unjustified approximations, and so the final expression for the spin-averaged squared matrix element, $ \mathcal{M}^2_{pp}$, contains some two hundred and fifty terms, and thus we do not reproduce that result here. The pn calculation likewise results in a very large and unwieldy expression for $ \mathcal{M}^2_{pn}$. \footnote{At this point we diverge from Ref.~\cite{dent_etal12} for two reasons.  One, they use the kinematics as if the $A'$ were massless, as in the axion calculation, and independent of that choice, their squared matrix element does not respect the correct exchange symmetry, as can be seen by inspection of their Eq. (A.3), with their claim that only the coefficient $C_k$ appearing in that equation is nonzero.}
+The pn process contain four diagrams analogous to the the diagrams for the pp process (there are only four, of course, 
+because the neutrons cannot radiate the $A'$). The new diagram that is relevant in the pn process is shown in 
+Fig.~\ref{fig:npdiagram} and yields a contribution of 
+%
+\begin{widetext}
+\begin{equation}
+M'_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \varepsilon}{l^2-m_\pi^2}  \frac{1}{(l-\qa)^2 - m_\pi^2} 
+\bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p_4) \gamma_5 u(p_2) (\qa - 2l)\cdot \varepsilon.
+\end{equation}
+\end{widetext}
+%
+The pn processes likewise yield a squared amplitude, 
+$\vert \mathcal{M}_{\mathrm{pn}} \vert^2$ that is unwieldy, so we do not give the 
+the full expression here. 
 
 
 %-------------- NP Feynman Diagram
@@ -309,28 +324,76 @@ pp diagram shown in Fig.~\ref{fig:ppdiagram}.}
 \end{figure}
 
 
-\subsection{Streaming limit}
-The first and simplest bound that may be obtained arises from assuming that all produced particles leave the supernova, carrying their energy with them. The constraint is derived simply by requiring that the energy loss through this cooling channel be roughly less than the cooling from neutrino emission; any greater, and it would have an observable effect on supernova cooling.
+%------------------------------------- STREAMING CONSTRAINT
+\subsection{The Streaming Limit of the Energy Loss Rate}
 
-The actual quantity of interest therefore is the rate of energy emission through dark bosons. From the spin-summed squared amplitudes already found, this is obtained by integrating over the phase space, and adding a factor of energy of the emitted particle.
-\beq
-Q_i = \int (2\pi)^4 E_A \sum_{spins} \mathcal{M}^2_i f(p_1) f(p_2)\delta(p_1+p_2-p_3-p_4-\qa) d\Pi,
-\eeq
-where $d\Pi$ is the Lorentz-invariant phase space, $ E_A $ is the energy of the emitted boson, and $ f(p) $ are the initial occupation numbers. The nucleons in the core are comfortably non-degenerate and non-relativistic, so  the Pauli blocking factor is omitted and the Maxwell-Boltzmann distribution is used  
-\beq
-f(p) =  \frac{n_b}{2} (\frac{2 \pi}{M_N T})^{3/2} e^{-\frac{\textbf{p}^2} {2 M_N T}}.
-\eeq
-	
-The integration is performed numerically to obtain $ Q_i$, which is the rate of energy emission per unit volume associated with either the $pn$ or $pp$ process. To obtain the dark gauge boson luminosity, it is assumed that production takes place in a core volume $V$ of radius 1 km, giving $ \mathcal{L}_A = V(Q_{pp} + Q_{pn}) $. The luminosity $\mathcal{L}_A $ is a complicated function of $ m_A $ and $ T $, but is simply proportional to the square of the parameter $ \varepsilon $.  Pulling that out of the expression gives a constraint 
-\beq
-\varepsilon^2 I_A(m_A, T) \le \mathcal{L}_\nu
-\eeq
-or a bound on the coupling of 
-\beq 
-\varepsilon \le \sqrt{\frac{4.1 \times 10^{37} MeV^2}{I_A(m_A, T)}} 
-\eeq 
-and the exclusion region is generated by varying the mass. 
+The first and simplest bound that may be obtained arises from assuming that all $A'$ particles produced in the supernova core 
+leave the supernova, carrying their energies with them. The constraint can be derived simply by 
+requiring that the energy loss through this cooling channel be less than the cooling from neutrino emission; 
+any greater, and it would have an observable effect on supernova cooling. This calculation yields values of 
+$\varepsilon$ above which cooling through $A'$ production is too rapid to be consistent with SN1987A. 
+We will consider modifications to this bound from $A'$ trapping and decay in subsequent subsections.
 
+The quantity of interest is the rate of energy emission through dark gauge bosons. 
+From the spin-summed, squared amplitudes described in the previous subsection, 
+the energy emission rate is obtained by integrating over the phase space, 
+and adding a factor of the energy of the emitted particle. To be specific, the 
+energy emission rate per unit volume is 
+%
+\begin{widetext}
+\beq
+\label{eq:rate1}
+Q_i = (2\pi)^4 \int\, E_{\mathrm{A}'} \, \sum_{s_1,s_2}\, \vert \mathcal{M}_i \vert^2 f(p_1) f(p_2)\delta^{(4)}(p_1+p_2-p_3-p_4-\qa)\, d\Pi,
+\eeq
+\end{widetext}
+%
+where $d\Pi$ is the Lorentz-invariant phase space, 
+$ E_{\mathrm{A}'}$ is the energy of the emitted $A'$ boson, 
+$f(p)$ are the phase-space densities of the incoming nucleons, and 
+the index $i$ refers to either the pp or pn processes. 
+The nucleons in the core are comfortably non-degenerate and non-relativistic, 
+so the Pauli blocking factor is omitted from Eq.~(\ref{eq:rate1}) and we take 
+all nucleons to have a Maxwell-Boltzmann momentum distribution, so 
+\beq
+f(p) =  \frac{n_b}{2} \left( \frac{2 \pi}{M_N T} \right)^{3/2} \exp \left(-\frac{p^2}{2 M_N T} \right).
+\eeq
+%
+We chose a baryon number density of $n_{\mathrm{b}} \approx 1.8 \times 10^{38}\, \mathrm{cm}^{-3}$ and a 
+core supernova temperature of $T = 30\, \mathrm{MeV}$, both of which are typical choices and thought to 
+be representative of supernova cores. \arz{Need to put a citation here for the properties of supernova cores. 
+I can probably find something in the literature, but please put something here if you have a citation.}
+
+We performed the phase space integrals using the Monte Carlo routines in the {\tt CUBA} library. 
+\arz{There needs to be some reference, citation, or some other information give about this library here.} 
+We integrated over the momenta $\vec{p}_1$, $\vec{p}_2$, $\vec{p}_3$, and the direction of the 
+three-momentum of the radiated boson $\hat{q}_{\mathrm{A}'}$, after fixing $\vec{p}_4$ 
+and the magnitude of $\vec{q}_{\mathrm{A}'}$ using the delta functions. 
+\arz{Cameron, can you double check this to be sure that it is correct? I rephrased it a bit, 
+but I found the earlier phrasing to be a bit ambiguous and I can't remember which choice 
+you made.} We used the {\tt suave} method provided within {\tt CUBA}, which combines 
+importance sampling and adaptive subdivision, as this method provided the best compromise 
+between accuracy and run-time for this particular application.
+
+To obtain the dark gauge boson luminosity from $Q_{\mathrm{pp}}$ and $Q_{\mathrm{pn}}$, 
+we assumed that $A'$ production takes place in a stellar core of radius $\sim 1$~km, so that 
+the total luminosity of $A'$ is 
+%
+\begin{equation}
+L_{\mathrm{A}'} = V (Q_{\mathrm{pp}} + Q_{\mathrm{pn}})
+\end{equation}
+%
+where $V$ is the volume of the sphere. Clearly, $L_{\mathrm{A}'}$ is proportional to $\varepsilon^2$, 
+so that writing $L_{\mathrm{A}'} = \varepsilon^2 I_{\mathrm{A}'}(m_{\mathrm{A}'},T)$ and 
+$L_{\nu}$ as the neutrino luminosity, we can write the constraint as 
+%
+\begin{equation}
+\varepsilon \lesssim \sqrt{\frac{L_{\nu}}{I_{\mathrm{A}'}(m_{\mathrm{A}'}, T)}}.
+\end{equation}
+%
+Following SOMEBODAY \arz{We need a citation here.}, we show a constraint taking 
+$L_{\nu} \approx 10^{53}\, \mathrm{erg/s} \approx 4 \times 10^{37}\, \mathrm{MeV}^2$. 
+
+%---------------------------------- DECAY LIMIT
 \subsection{Decay limit}
 The constraint from the streaming limit above provides an upper bound on the allowed coupling (or lower bound on the excluded coupling) by considering the production on the $A'$. Naively it might be expected that this suffices, in that all higher couplings are excluded. However, in order to function as a cooling channel, enough of the produced dark gauge bosons must escape the supernova. As the coupling increases, so do processes that prevent the escape, and so the excluded region has an upper bound, above which the luminosity again drops below the neutrino luminosity. The first such limit may be found by considering decay of the dark bosons into Standard Model particles, and assuming that these SM particles are trapped in the supernova core and contribute nothing to the cooling. The dark boson has a typical lifetime of 
 \beq
@@ -345,7 +408,8 @@ To take this into account, the above exponential factor is simply appended to th
 \varepsilon \le \sqrt{\frac{4.1 \times 10^{37} MeV^2}{I_A(m_A, T, \varepsilon)}}.
 \eeq
 	
-	
+
+%---------------------------------- TRAPPING	
 \subsection{Trapping limit}
 The second constraint that produces an upper bound on the excluded region comes from considering trapping of dark bosons within the supernova. With a large enough coupling, the new particles will thermalize and then will be emitted from a spherical shell.  In this case the luminosity is given simply by the Steffan-Boltzmann law
 \beq
@@ -383,13 +447,12 @@ and the bound on the coupling is finally found by requiring  $ \tau_x(\varepsilo
 	
 	
 \subsection{Phase Space Integration}
-In every case calculating the bound requires integrating an expression involving the long and complicated Bremsstrahlung amplitude, which unfortunately could not be done analytically without making unjustified approximations. The integration was consequently performed numerically using the Monte Carlo routines provided by the Cuba library. Employing kinematic relations did not seem to reduce the complexity of the problem, so in the interests of reducing the number of possible mistakes the kinematics were done by brute force. We integrated over the entire phase space explicitly in terms of the eleven variables of $ \vec{p_1}, \vec{p_2}, \vec{p_3}, \hat{\qa} $, then fixed $ p_4 $ using the 3-momentum part of the delta-function and used an unpleasantly complicated equation obtained from the energy delta-function to fix the remaining one free momentum amplitude - in our case we chose this to be $ \qa $, the momentum of the emitted boson. At each step points resulting in unphysical configurations were discarded, and the remaining points were then plugged in to the appropriate amplitude, and then that result used as the integrand. The numerical integration routine used was the \textit{Suave} method provided by CUBA, which combines importance sampling and adaptive subdivision; this method seemed to provide the best compromise between computation time and error. 
-	
+
+In every case 	
+
 Once the integration is complete the calculation of the trapping and streaming limits is a straightforward application of the equations previously derived, and proceeded as outlined above. The decay limit is somewhat harder, since $ \varepsilon $ appears on both sides of the equation. Again we employed an unsubtle approach to solving the problem: $ \varepsilon $ was set to an arbitrary value where the constraint was satisfied, and then iteratively reduced until the constraint was no longer satisfied. This obviously introduces another source of error, but with a sufficiently small interval in $ \varepsilon $ this is negligible. The one further slight complication is that at after a certain value of $ M_A $ the decay limit rapidly goes to zero, at which point the procedure was terminated.
 	
-We then scanned over the desired range of values for $ M_A $ and output the three limits - trapping, decay, and streaming - at each point. The complexity of the integration was such that errors remained relatively large even with highest practicable number of samples.
 
-The calculation is dependent on a number of constants. We chose the following values as roughly typical of supernovae: T, the temperature of the supernova core, was set to 30 MeV; r, the radius of the supernova core, to 1 km; $ R $, the distance at which decay products are trapped, to 10 km; $ \mathcal{L} $, the luminosity bound, to $ 10^{53} erg/s $; and $ \n_b $, the baryon number density in the supernova interior, to $ 1.79*10^{38} cm^{-3} $. 
 
 
 %-------------------- RESULTS
@@ -425,18 +488,7 @@ than "1e-09" and so on? Can we make the axis labels and tick mark labels larger?
 
 
 
-%------------ APPENDIX
-\appendix
-\label{appendix:details}
 
-\section{Bremsstrahlung diagrams}
-	Each of the $p-p-\pi $ vertices contribute a factor of $g_{pp}$,  the pseudoscalar pion-nucleon coupling. $f_{pp}$, the pseudovector pion-nucleon coupling, is related by $g_{pp} = \frac{2M_N}{m_\pi} f_{pp} $. The $ p-p-A' $ vertex contributes $e\varepsilon \gamma_\mu$, where $\varepsilon$ is the mixing strength between the photon and dark photon. Labeling the contributions according to the Feynman diagrams in Fig. , the matrix elements are where the exchange momenta are defined by $ k = p_2-p_4 $ and $ l = p_2-p_3 $, and the dark photon's polarization is given by $\epsilon$. 
-	For $pn$ scattering, four of the diagrams are simply the same as those given above. The only new Feynman diagram comes from bremsstrahlung off the internal pion, and results in  
-	 \beq
-	 M'_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e \varepsilon}{l^2-m_\pi^2
-	 }  \frac{1}{(l-\qa)^2 - m_\pi^2} \bar{u}(p_4) \gamma_5 u(p_1) \bar{u}(p_3) u(p_2) (\qa - 2l)\cdot \varepsilon
-	 \eeq
-	 Note that these matrix elements agree with Ref.~\cite{dent_etal12}.
 \acknowledgments
 
 AKL was supported in part by NSF grant PHY-1519175.
