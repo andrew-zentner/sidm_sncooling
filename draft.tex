@@ -55,6 +55,8 @@
 
 \newcommand{\La}{\Lambda^2_{\rm{alg}}}
 
+\newcommand{\dd}{\mathrm{d}}
+
 %--- journals
 \newcommand{\physrep}{Phys. Reports}
 \newcommand{\mnras}{Mon. Not. R. Astron. Soc.}
@@ -343,11 +345,16 @@ energy emission rate per unit volume is
 \begin{widetext}
 \beq
 \label{eq:rate1}
-Q_i = (2\pi)^4 \int\, E_{\mathrm{A}'} \, \sum_{s_1,s_2}\, \vert \mathcal{M}_i \vert^2 f(p_1) f(p_2)\delta^{(4)}(p_1+p_2-p_3-p_4-\qa)\, d\Pi,
+Q_i = (2\pi)^4 \int\, E_{\mathrm{A}'} \, \sum_{s_1,s_2}\, \vert \mathcal{M}_i \vert^2 f(p_1) f(p_2)\delta^{(4)}(p_1+p_2-p_3-p_4-\qa)\, \dd \Pi,
 \eeq
 \end{widetext}
 %
-where $d\Pi$ is the Lorentz-invariant phase space, 
+where 
+%
+\begin{equation}
+d\Pi = \frac{\dd^3 \vec{q}_{\mathrm{A}'}}{(2\pi)^3 2E_{\mathrm{A}'}}\, \prod_{i=1}^{4}\, \frac{\dd^3 \vec{p}_i}{(2\pi^3) 2E_1}
+\end{equation} 
+is the Lorentz-invariant phase space interval, 
 $ E_{\mathrm{A}'}$ is the energy of the emitted $A'$ boson, 
 $f(p)$ are the phase-space densities of the incoming nucleons, and 
 the index $i$ refers to either the pp or pn processes. 
@@ -387,15 +394,41 @@ so that writing $L_{\mathrm{A}'} = \varepsilon^2 I_{\mathrm{A}'}(m_{\mathrm{A}'}
 $L_{\nu}$ as the neutrino luminosity, we can write the constraint as 
 %
 \begin{equation}
+\label{eq:bound1}
 \varepsilon \lesssim \sqrt{\frac{L_{\nu}}{I_{\mathrm{A}'}(m_{\mathrm{A}'}, T)}}.
 \end{equation}
 %
-Following SOMEBODAY \arz{We need a citation here.}, we show a constraint taking 
+Following SOMEBODY \arz{We need a citation here.}, we derive a constraint taking 
 $L_{\nu} \approx 10^{53}\, \mathrm{erg/s} \approx 4 \times 10^{37}\, \mathrm{MeV}^2$. 
 
+
+The constraint derived in this manner from Eq.~(\ref{eq:bound1}) sets the lower limit on the 
+exclusion band shown in Figure~\ref{fig:bound1}, which we will discuss in more detail 
+below. If all of the $A'$ produced in the core left the supernova freely, the bound of values of 
+$\varepsilon$ higher than those given by Eq.~(\ref{eq:bound1}) would be ruled out. However, 
+as we have already mentioned, $\varepsilon$ can become sufficiently large that only a negligible 
+amount of energy actually leaves the supernova core because of either $A'$ decays or scattering. 
+These considerations place an upper limit on the values of $\varepsilon$ for which this constraint 
+applies, and we discuss these effects in the next two subsections.
+
+
 %---------------------------------- DECAY LIMIT
-\subsection{Decay limit}
-The constraint from the streaming limit above provides an upper bound on the allowed coupling (or lower bound on the excluded coupling) by considering the production on the $A'$. Naively it might be expected that this suffices, in that all higher couplings are excluded. However, in order to function as a cooling channel, enough of the produced dark gauge bosons must escape the supernova. As the coupling increases, so do processes that prevent the escape, and so the excluded region has an upper bound, above which the luminosity again drops below the neutrino luminosity. The first such limit may be found by considering decay of the dark bosons into Standard Model particles, and assuming that these SM particles are trapped in the supernova core and contribute nothing to the cooling. The dark boson has a typical lifetime of 
+\subsection{The Decay Limit}
+
+The constraint from the streaming limit above provides an upper bound on the allowed coupling 
+(or lower bound on the excluded coupling) from the production on $A'$ bosons. 
+In order to function as an effective cooling channel, enough of the dark gauge bosons 
+must escape the supernova. As the coupling increases, so do processes that prevent this escape, 
+and so the excluded region has an upper bound, above which the luminosity again drops below the 
+neutrino luminosity. The first such limit may be found by considering decay of the dark bosons 
+into Standard Model particles. Standard model particles will scatter and thermalize 
+on a timescale much shorter than the timescale for the evolution of the core, so decays 
+contribute nothing to the cooling. 
+
+The dark boson has a typical lifetime of 
+\arz{Cameron, try to rephrase this. This is not the lifetime, but rather the 
+mean distance to a decay.}
+%
 \beq
 l = \frac{3 E_{A}}{N_{eff} m_A^2 \varepsilon^2},
 \eeq
@@ -403,19 +436,35 @@ and so the fraction escaping the supernova before decaying is given by
 \beq
 e^{r_{decay}/l} = e^{r_{decay} N_{eff} m_A^2 \varepsilon^2/(3 E_A)}.
 \eeq
-To take this into account, the above exponential factor is simply appended to the phase space integrand, and the calculation then proceeds as before. The limit is derived from the same equation, with the only complication being the fact that $ I_A $ is now a function of $ \varepsilon $, in addition to $ m_A, T $. This makes the numerical calculation slightly more complicated, but otherwise changes nothing of importance, with now the constraint a transcendental equation,  
-\beq
-\varepsilon \le \sqrt{\frac{4.1 \times 10^{37} MeV^2}{I_A(m_A, T, \varepsilon)}}.
-\eeq
-	
+%
+To account for the suppression of gauge boson luminosity due to decays we simply multiply the phase space 
+integrand in Eq.~(\ref{eq:rate1}) by the exponential suppression factor, after which the calculation proceeds 
+as in the previous subsection. The limit is derived in the same way, 
+with the additional complication that $I_{\mathrm{A}'}$ is now a function of $\varepsilon $, in addition to $m_{\mathrm{A}'}$ and $T$. 
+The constraint Eq.~(\ref{eq:bound1}), therefore, becomes a transcendental equation that must be solved numerically. 
+
+The luminosity in $A'$ will be an increasing function of $\varepsilon$ until decays suppress the gauge boson luminosity, 
+at which point $L_{\mathrm{A}'}$ becomes a rapidly decreasing function of $\varepsilon$. Therefore, the excluded values of 
+$\varepsilon$ at a given mass will generally have a lower bound set by the calculations of the previous subsection, and an 
+upper bound set by decays.
 
 %---------------------------------- TRAPPING	
 \subsection{Trapping limit}
-The second constraint that produces an upper bound on the excluded region comes from considering trapping of dark bosons within the supernova. With a large enough coupling, the new particles will thermalize and then will be emitted from a spherical shell.  In this case the luminosity is given simply by the Steffan-Boltzmann law
+
+\arz{This section needs some work as it is a bit hard to follow.}
+The second effect that produces an upper bound on the excluded region 
+comes from considering trapping of dark bosons within the supernova. 
+With a large enough coupling, the dark photons will thermalize and then 
+will be emitted from an approximately spherical ``dark photosphere" at the radial position 
+where the $A'$ mean free path becomes larger than the typical size of the supernova core. 
+In this case the luminosity is given simply by Stefan's law, 
 \beq
 \mathcal{L}_t  = 4\pi r^2 T_A^4 \sigma,
 \eeq
-where $ r $ is now the radius of the emitting shell and $ T_A $ its temperature. We can estimate $ r = 10$ km, since the density of the supernova drops drastically around that point. After taking that value for r, the bound on the luminosity translates into a bound on $ T_A $ 
+where $r$ is now the radius of the emitting shell and $T_A$ its temperature. 
+We estimate the radius of this dark photosphere as $r=10$ km, 
+because the density of the supernova drops drastically around that point. 
+After taking that value for r, the bound on the luminosity translates into a bound on $ T_A $ 
 \beq
 T_A \le 9.586\rm\ MeV.
 \eeq
@@ -459,6 +508,18 @@ Once the integration is complete the calculation of the trapping and streaming l
 \section{Results}
 \label{section:results}
 
+
+\begin{figure}[th]
+	\includegraphics[width=9cm]{endtoend.png}
+	\caption{A comparison of the final result for the excluded region with the result from Ref.~\cite{dent_etal12}. The excluded region is clearly significantly less restrictive, and opens up the region of parameter space for $\varepsilon \approx  1e-8-9 $.
+\arz{Cameron, some similar comments as for Figure 1. Can we write numbers as "$10^{-9}$" rather 
+than "1e-09" and so on? Can we make the axis labels and tick mark labels larger?}}
+\label{fig:constraint}
+\end{figure}
+
+
+
+
 \begin{figure}[th]
 \includegraphics[width=9cm]{stages.eps}
 \caption{The changes in the bounds generated as each stage of the calculation departs from Ref.~\cite{dent_etal12}. Interestingly the kinematics have apparently relatively little effect.
@@ -470,13 +531,6 @@ tick mark labels larger? Can you make all of the lines thicker? Can you make eac
 
 Let's put some text here.
 
-\begin{figure}[th]
-	\includegraphics[width=9cm]{endtoend.png}
-	\caption{A comparison of the final result for the excluded region with the result from Ref.~\cite{dent_etal12}. The excluded region is clearly significantly less restrictive, and opens up the region of parameter space for $\varepsilon \approx  1e-8-9 $.
-\arz{Cameron, some similar comments as for Figure 1. Can we write numbers as "$10^{-9}$" rather 
-than "1e-09" and so on? Can we make the axis labels and tick mark labels larger?}	
-	}
-\end{figure}
 
 
 %--------------------------- CONCLUSIONS
