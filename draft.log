@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.24)  18 APR 2017 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.24)  20 APR 2017 10:30
 entering extended mode
 **draft.tex
 (draft.tex
@@ -322,23 +322,23 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 ))
 (draft.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-Class revtex4 Info: Patching LaTeX tabular. on input line 78.
-Class revtex4 Info: cite was not loaded (OK!) on input line 78.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+Class revtex4 Info: Patching LaTeX tabular. on input line 79.
+Class revtex4 Info: cite was not loaded (OK!) on input line 79.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 79.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
@@ -359,7 +359,7 @@ Class revtex4 Info: multicol was not loaded (OK!) on input line 78.
 Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 79.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -368,14 +368,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 
 (draft.out) (draft.out)
 \@outlinefile=\write4
  [1{C:/Users/Cameron/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 1072) in paragraph at lines 233--241
+Underfull \hbox (badness 1072) in paragraph at lines 231--239
 \OT1/cmr/m/n/10 brehmsstrahlung oc-curs through the $\OML/cmm/m/it/10 "q$ \OT1/
 cmr/m/n/10 cou-pling to
  []
@@ -383,64 +383,67 @@ cmr/m/n/10 cou-pling to
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 266.
+(hyperref)                removing `math shift' on input line 264.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 266.
+(hyperref)                removing `math shift' on input line 264.
 
 <ppdiagram.pdf, id=140, 532.99126pt x 283.0575pt>
 File: ppdiagram.pdf Graphic file (type pdf)
  <use ppdiagram.pdf>
-Package pdftex.def Info: ppdiagram.pdf used on input line 283.
+Package pdftex.def Info: ppdiagram.pdf used on input line 281.
 (pdftex.def)             Requested size: 227.62204pt x 120.88307pt.
 
-Underfull \hbox (badness 3118) in paragraph at lines 290--295
+<npdiagram.pdf, id=141, 529.98pt x 436.63126pt>
+File: npdiagram.pdf Graphic file (type pdf)
+ <use npdiagram.pdf>
+Package pdftex.def Info: npdiagram.pdf used on input line 290.
+(pdftex.def)             Requested size: 227.62204pt x 187.52791pt.
+
+Underfull \hbox (badness 3118) in paragraph at lines 300--305
 []\OT1/cmr/m/n/10 Evaluating these di-a-grams is te-dious, but very
  []
 
-[3 <./ppdiagram.pdf>] <npdiagram.pdf, id=187, 529.98pt x 436.63126pt>
-File: npdiagram.pdf Graphic file (type pdf)
+[3 <./ppdiagram.pdf> <./npdiagram.pdf>] [4]
 
-<use npdiagram.pdf>
-Package pdftex.def Info: npdiagram.pdf used on input line 364.
-(pdftex.def)             Requested size: 227.62204pt x 187.52791pt.
- [4]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 390.
-
-[5 <./npdiagram.pdf>]
-
-LaTeX Warning: Reference `fig:constraint' on page 6 undefined on input line 452
-.
+Package natbib Warning: Citation `snova_core' on page 5 undefined on input line
+ 412.
 
 
-LaTeX Warning: Reference `fig:constraint' on page 6 undefined on input line 452
-.
+Package natbib Warning: Citation `hahn_suave' on page 5 undefined on input line
+ 416.
 
-[6]
-Underfull \hbox (badness 1845) in paragraph at lines 555--556
+
+Package hyperref Warning: Ignoring empty anchor on input line 442.
+
+[5]
+
+Package natbib Warning: Citation `snova_density' on page 6 undefined on input l
+ine 540.
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 554--555
 []\OT1/cmr/bx/n/10 [ARZ: In what fol-low ALL SUB-SCRIPTS
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 555--556
+Underfull \hbox (badness 2189) in paragraph at lines 554--555
 \OT1/cmr/bx/n/10 SHOULD BE MADE CON-SIS-TENT WITH
  []
 
-[7] <constraint_edited.png, id=263, 570.63188pt x 387.69844pt>
-File: constraint_edited.png Graphic file (type png)
+[6] <compiledbounds_edited.pdf, id=261, 614.295pt x 794.97pt>
+File: compiledbounds_edited.pdf Graphic file (type pdf)
 
-<use constraint_edited.png>
-Package pdftex.def Info: constraint_edited.png used on input line 631.
-(pdftex.def)             Requested size: 398.33858pt x 270.63574pt.
+<use compiledbounds_edited.pdf>
+Package pdftex.def Info: compiledbounds_edited.pdf used on input line 627.
+(pdftex.def)             Requested size: 398.33858pt x 515.49922pt.
 
-Underfull \hbox (badness 1248) in paragraph at lines 648--649
-\OT1/cmr/m/n/10 largely re-pro-duce con-straints al-ready ob-tained from
- []
 
-(draft.bbl
+LaTeX Warning: Reference `fig:constraints' on page 7 undefined on input line 67
+6.
+
+[7] [8 <./compiledbounds_edited.pdf>] (draft.bbl
 Underfull \hbox (badness 3657) in paragraph at lines 118--122
  []\OT1/cmr/m/n/9 M. Lat-tanzi and J. Silk, ArXiv e-prints (2008),
  []
@@ -450,27 +453,30 @@ Underfull \hbox (badness 1418) in paragraph at lines 125--132
  []\OT1/cmr/m/n/9 L. Ack-er-man, M. R. Buck-ley, S. M. Car-roll, and
  []
 
-[8])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 660.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 660.
- [9 <./constraint_edited.png>] (draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 660.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 660.
+[9])
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 709.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 709.
+[10] (draft.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 709.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 709.
 Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: 8E51244C59288667181D30268154EA6A;653.
+(rerunfilecheck)             Checksum: D4651D4FAB0CEA7C28CB091305C9AD8E;637.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8097 strings out of 493698
- 113747 string characters out of 3141988
- 244591 words of memory out of 3000000
- 11258 multiletter control sequences out of 15000+200000
+ 8103 strings out of 493698
+ 113834 string characters out of 3141988
+ 238916 words of memory out of 3000000
+ 11262 multiletter control sequences out of 15000+200000
  9933 words of font info for 36 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 32i,11n,35p,533b,549s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,11n,35p,533b,541s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/P
@@ -479,22 +485,25 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb>
-Output written on draft.pdf (9 pages, 499868 bytes).
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmtt10.pfb>
+Output written on draft.pdf (10 pages, 505139 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
  104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
