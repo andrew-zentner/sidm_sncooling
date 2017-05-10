@@ -1,0 +1,334 @@
+\begin{thebibliography}{40}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{{Jungman} et~al.}(1996)\citenamefont{{Jungman},
+  {Kamionkowski}, and {Griest}}}]{jungman_etal96}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Jungman}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Kamionkowski}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{{Griest}}},
+  \bibinfo{journal}{\physrep} \textbf{\bibinfo{volume}{267}},
+  \bibinfo{pages}{195} (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{{Carlson} et~al.}(1992)\citenamefont{{Carlson},
+  {Machacek}, and {Hall}}}]{carlson_etal92}
+\bibinfo{author}{\bibfnamefont{E.~D.} \bibnamefont{{Carlson}}},
+  \bibinfo{author}{\bibfnamefont{M.~E.} \bibnamefont{{Machacek}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{L.~J.}
+  \bibnamefont{{Hall}}}, \bibinfo{journal}{\apj}
+  \textbf{\bibinfo{volume}{398}}, \bibinfo{pages}{43} (\bibinfo{year}{1992}).
+
+\bibitem[{\citenamefont{{de Laix} et~al.}(1995)\citenamefont{{de Laix},
+  {Scherrer}, and {Schaefer}}}]{deLaix_etal95}
+\bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{{de Laix}}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{{Scherrer}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~K.}
+  \bibnamefont{{Schaefer}}}, \bibinfo{journal}{\apj}
+  \textbf{\bibinfo{volume}{452}}, \bibinfo{pages}{495} (\bibinfo{year}{1995}),
+  \eprint{arXiv:astro-ph/9502087}.
+
+\bibitem[{\citenamefont{{Atrio-Barandela} and
+  {Davidson}}(1997)}]{atrio-barandela_davidson97}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{{Atrio-Barandela}}}
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Davidson}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{55}}, \bibinfo{pages}{5886}
+  (\bibinfo{year}{1997}), \eprint{arXiv:astro-ph/9702236}.
+
+\bibitem[{\citenamefont{{Spergel} and
+  {Steinhardt}}(2000)}]{spergel_steinhardt00}
+\bibinfo{author}{\bibfnamefont{D.~N.} \bibnamefont{{Spergel}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.~J.}
+  \bibnamefont{{Steinhardt}}}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{84}}, \bibinfo{pages}{3760} (\bibinfo{year}{2000}),
+  \eprint{arXiv:astro-ph/9909386}.
+
+\bibitem[{\citenamefont{{Hogan} and {Dalcanton}}(2000)}]{hogan_dalcanton00}
+\bibinfo{author}{\bibfnamefont{C.~J.} \bibnamefont{{Hogan}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~J.} \bibnamefont{{Dalcanton}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{62}},
+  \bibinfo{pages}{063511} (\bibinfo{year}{2000}),
+  \eprint{arXiv:astro-ph/0002330}.
+
+\bibitem[{\citenamefont{{Mohapatra} and {Teplitz}}(2000)}]{mohapatra_teplitz00}
+\bibinfo{author}{\bibfnamefont{R.~N.} \bibnamefont{{Mohapatra}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{V.~L.}
+  \bibnamefont{{Teplitz}}}, \bibinfo{journal}{\prd}
+  \textbf{\bibinfo{volume}{62}}, \bibinfo{pages}{063506}
+  (\bibinfo{year}{2000}), \eprint{arXiv:astro-ph/0001362}.
+
+\bibitem[{\citenamefont{{Dav{\'e}} et~al.}(2001)\citenamefont{{Dav{\'e}},
+  {Spergel}, {Steinhardt}, and {Wandelt}}}]{dave_etal01}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Dav{\'e}}}},
+  \bibinfo{author}{\bibfnamefont{D.~N.} \bibnamefont{{Spergel}}},
+  \bibinfo{author}{\bibfnamefont{P.~J.} \bibnamefont{{Steinhardt}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.~D.}
+  \bibnamefont{{Wandelt}}}, \bibinfo{journal}{\apj}
+  \textbf{\bibinfo{volume}{547}}, \bibinfo{pages}{574} (\bibinfo{year}{2001}),
+  \eprint{arXiv:astro-ph/0006218}.
+
+\bibitem[{\citenamefont{{Hisano} et~al.}(2004)\citenamefont{{Hisano},
+  {Matsumoto}, and {Nojiri}}}]{hisano_etal04}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Hisano}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Matsumoto}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.~M.}
+  \bibnamefont{{Nojiri}}}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{92}}, \bibinfo{pages}{031303}
+  (\bibinfo{year}{2004}), \eprint{arXiv:hep-ph/0307216}.
+
+\bibitem[{\citenamefont{{Hisano} et~al.}(2005)\citenamefont{{Hisano},
+  {Matsumoto}, {Nojiri}, and {Saito}}}]{hisano_etal05}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Hisano}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Matsumoto}}},
+  \bibinfo{author}{\bibfnamefont{M.~M.} \bibnamefont{{Nojiri}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{{Saito}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{71}},
+  \bibinfo{pages}{063528} (\bibinfo{year}{2005}),
+  \eprint{arXiv:hep-ph/0412403}.
+
+\bibitem[{\citenamefont{{Pospelov} et~al.}(2008)\citenamefont{{Pospelov},
+  {Ritz}, and {Voloshin}}}]{pospelov_etal08}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Pospelov}}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Ritz}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Voloshin}}},
+  \bibinfo{journal}{Phys. Lett. B} \textbf{\bibinfo{volume}{662}},
+  \bibinfo{pages}{53} (\bibinfo{year}{2008}), \eprint{0711.4866}.
+
+\bibitem[{\citenamefont{{Arkani-Hamed}
+  et~al.}(2008)\citenamefont{{Arkani-Hamed}, {Finkbeiner}, {Slatyer}, and
+  {Weiner}}}]{arkani-hamed_etal08a}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Arkani-Hamed}}},
+  \bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{{Finkbeiner}}},
+  \bibinfo{author}{\bibfnamefont{T.~R.} \bibnamefont{{Slatyer}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Weiner}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2008}),
+  \eprint{0810.0713}.
+
+\bibitem[{\citenamefont{{Lattanzi} and {Silk}}(2008)}]{lattanzi_silk08}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Lattanzi}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Silk}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2008}),
+  \eprint{0812.0360}.
+
+\bibitem[{\citenamefont{{Ackerman} et~al.}(2009)\citenamefont{{Ackerman},
+  {Buckley}, {Carroll}, and {Kamionkowski}}}]{ackerman_etal09}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Ackerman}}},
+  \bibinfo{author}{\bibfnamefont{M.~R.} \bibnamefont{{Buckley}}},
+  \bibinfo{author}{\bibfnamefont{S.~M.} \bibnamefont{{Carroll}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Kamionkowski}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{023519} (\bibinfo{year}{2009}), \eprint{0810.5126}.
+
+\bibitem[{\citenamefont{{Feng} et~al.}(2009)\citenamefont{{Feng}, {Kaplinghat},
+  {Tu}, and {Yu}}}]{feng_etal09}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{{Feng}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Kaplinghat}}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{{Tu}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.-B.} \bibnamefont{{Yu}}},
+  \bibinfo{journal}{Journal of Cosmology and Astro-Particle Physics}
+  \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{4} (\bibinfo{year}{2009}),
+  \eprint{0905.3039}.
+
+\bibitem[{\citenamefont{{Kong} et~al.}(2015)\citenamefont{{Kong}, {Mohlabeng},
+  and {Park}}}]{kong_etal15}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{{Kong}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Mohlabeng}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.-C.}
+  \bibnamefont{{Park}}}, \bibinfo{journal}{Physics Letters B}
+  \textbf{\bibinfo{volume}{743}}, \bibinfo{pages}{256} (\bibinfo{year}{2015}),
+  \eprint{1411.6632}.
+
+\bibitem[{\citenamefont{{Yoshida} et~al.}(2000)\citenamefont{{Yoshida},
+  {Springel}, {White}, and {Tormen}}}]{yoshida_etal00}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Yoshida}}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{{Springel}}},
+  \bibinfo{author}{\bibfnamefont{S.~D.~M.} \bibnamefont{{White}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Tormen}}},
+  \bibinfo{journal}{\apjl} \textbf{\bibinfo{volume}{544}}, \bibinfo{pages}{L87}
+  (\bibinfo{year}{2000}), \eprint{arXiv:astro-ph/0006134}.
+
+\bibitem[{\citenamefont{{Gnedin} and {Ostriker}}(2001)}]{gnedin_ostriker01}
+\bibinfo{author}{\bibfnamefont{O.~Y.} \bibnamefont{{Gnedin}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{{Ostriker}}},
+  \bibinfo{journal}{\apj} \textbf{\bibinfo{volume}{561}}, \bibinfo{pages}{61}
+  (\bibinfo{year}{2001}), \eprint{arXiv:astro-ph/0010436}.
+
+\bibitem[{\citenamefont{{Miralda-Escud{\'e}}}(2002)}]{miralda-escude02}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Miralda-Escud{\'e}}}},
+  \bibinfo{journal}{\apj} \textbf{\bibinfo{volume}{564}}, \bibinfo{pages}{60}
+  (\bibinfo{year}{2002}).
+
+\bibitem[{\citenamefont{{Randall} et~al.}(2008)\citenamefont{{Randall},
+  {Markevitch}, {Clowe}, {Gonzalez}, and {Brada{\v c}}}}]{randall_etal08}
+\bibinfo{author}{\bibfnamefont{S.~W.} \bibnamefont{{Randall}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Markevitch}}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Clowe}}},
+  \bibinfo{author}{\bibfnamefont{A.~H.} \bibnamefont{{Gonzalez}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Brada{\v
+  c}}}}, \bibinfo{journal}{\apj} \textbf{\bibinfo{volume}{679}},
+  \bibinfo{pages}{1173} (\bibinfo{year}{2008}), \eprint{0704.0261}.
+
+\bibitem[{\citenamefont{{Kamionkowski} and
+  {Profumo}}(2008)}]{kamionkowski_profumo08}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Kamionkowski}}}
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Profumo}}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{101}},
+  \bibinfo{pages}{261301} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{{Zentner}}(2009)}]{zentner09}
+\bibinfo{author}{\bibfnamefont{A.~R.} \bibnamefont{{Zentner}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{80}}, \bibinfo{eid}{063501}
+  (\bibinfo{year}{2009}), \eprint{0907.3448}.
+
+\bibitem[{\citenamefont{{Robertson} and {Zentner}}(2009)}]{robertson_zentner09}
+\bibinfo{author}{\bibfnamefont{B.~E.} \bibnamefont{{Robertson}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~R.}
+  \bibnamefont{{Zentner}}}, \bibinfo{journal}{\prd}
+  \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{083525}
+  (\bibinfo{year}{2009}), \eprint{0902.0362}.
+
+\bibitem[{\citenamefont{{Pieri} et~al.}(2009)\citenamefont{{Pieri}, {Lattanzi},
+  and {Silk}}}]{pieri_etal09}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Pieri}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Lattanzi}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Silk}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2009}),
+  \eprint{0902.4330}.
+
+\bibitem[{\citenamefont{{Spolyar} et~al.}(2009)\citenamefont{{Spolyar},
+  {Buckley}, {Freese}, {Hooper}, and {Murayama}}}]{spolyar_etal09}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Spolyar}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Buckley}}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{{Freese}}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Hooper}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{{Murayama}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2009}),
+  \eprint{0905.4764}.
+
+\bibitem[{\citenamefont{{Finkbeiner} et~al.}(2009)\citenamefont{{Finkbeiner},
+  {Lin}, and {Weiner}}}]{finkbeiner_etal09}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{{Finkbeiner}}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Lin}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Weiner}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2009}),
+  \eprint{0906.0002}.
+
+\bibitem[{\citenamefont{{Slatyer} et~al.}(2009)\citenamefont{{Slatyer},
+  {Padmanabhan}, and {Finkbeiner}}}]{slatyer_etal09}
+\bibinfo{author}{\bibfnamefont{T.~R.} \bibnamefont{{Slatyer}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Padmanabhan}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.~P.}
+  \bibnamefont{{Finkbeiner}}}, \bibinfo{journal}{ArXiv e-prints}
+  (\bibinfo{year}{2009}), \eprint{0906.1197}.
+
+\bibitem[{\citenamefont{{Bramante} et~al.}(2014)\citenamefont{{Bramante},
+  {Fukushima}, {Kumar}, and {Stopnitzky}}}]{bramante_etal14}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Bramante}}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{{Fukushima}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Kumar}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{{Stopnitzky}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{89}}, \bibinfo{eid}{015010}
+  (\bibinfo{year}{2014}), \eprint{1310.3509}.
+
+\bibitem[{\citenamefont{{Albuquerque} et~al.}(2014)\citenamefont{{Albuquerque},
+  {P{\'e}rez de los Heros}, and {Robertson}}}]{albuquerque_etal14}
+\bibinfo{author}{\bibfnamefont{I.~F.~M.} \bibnamefont{{Albuquerque}}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{P{\'e}rez de los Heros}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.~S.}
+  \bibnamefont{{Robertson}}}, \bibinfo{journal}{\jcap}
+  \textbf{\bibinfo{volume}{2}}, \bibinfo{eid}{047} (\bibinfo{year}{2014}),
+  \eprint{1312.0797}.
+
+\bibitem[{\citenamefont{{Kaplinghat} et~al.}(2014)\citenamefont{{Kaplinghat},
+  {Tulin}, and {Yu}}}]{kaplinghat_etal14}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Kaplinghat}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Tulin}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.-B.} \bibnamefont{{Yu}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{89}}, \bibinfo{eid}{035009}
+  (\bibinfo{year}{2014}), \eprint{1310.7945}.
+
+\bibitem[{\citenamefont{{Chen} et~al.}(2014)\citenamefont{{Chen}, {Lee}, {Lin},
+  and {Lin}}}]{chen_etal14}
+\bibinfo{author}{\bibfnamefont{C.-S.} \bibnamefont{{Chen}}},
+  \bibinfo{author}{\bibfnamefont{F.-F.} \bibnamefont{{Lee}}},
+  \bibinfo{author}{\bibfnamefont{G.-L.} \bibnamefont{{Lin}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Y.-H.} \bibnamefont{{Lin}}},
+  \bibinfo{journal}{\jcap} \textbf{\bibinfo{volume}{10}}, \bibinfo{eid}{049}
+  (\bibinfo{year}{2014}), \eprint{1408.5471}.
+
+\bibitem[{\citenamefont{{Feng} et~al.}(2016)\citenamefont{{Feng}, {Smolinsky},
+  and {Tanedo}}}]{feng_etal16}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{{Feng}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Smolinsky}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Tanedo}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{93}}, \bibinfo{eid}{115036}
+  (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{{Catena} and {Widmark}}(2016)}]{catena_widmark16}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Catena}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Widmark}}},
+  \bibinfo{journal}{\jcap} \textbf{\bibinfo{volume}{12}}, \bibinfo{eid}{016}
+  (\bibinfo{year}{2016}), \eprint{1609.04825}.
+
+\bibitem[{\citenamefont{{Turner}}(1988)}]{turner88}
+\bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{{Turner}}},
+  \bibinfo{journal}{Physical Review Letters} \textbf{\bibinfo{volume}{60}},
+  \bibinfo{pages}{1797} (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{{Raffelt}}(1996)}]{raffelt96_book}
+\bibinfo{author}{\bibfnamefont{G.~G.} \bibnamefont{{Raffelt}}},
+  \emph{\bibinfo{title}{{Stars as laboratories for fundamental physics : the
+  astrophysics of neutrinos, axions, and other weakly interacting particles}}}
+  (\bibinfo{publisher}{University of Chicago Press}, \bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{{Dent} et~al.}(2012)\citenamefont{{Dent}, {Ferrer}, and
+  {Krauss}}}]{dent_etal12}
+\bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{{Dent}}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{{Ferrer}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~M.} \bibnamefont{{Krauss}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1201.2683}.
+
+\bibitem[{\citenamefont{{Rrapaj} and {Reddy}}(2016)}]{rrapaj_reddy16}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{{Rrapaj}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Reddy}}},
+  \bibinfo{journal}{\prc} \textbf{\bibinfo{volume}{94}}, \bibinfo{eid}{045805}
+  (\bibinfo{year}{2016}), \eprint{1511.09136}.
+
+\bibitem[{\citenamefont{{Hardy} and {Lasenby}}(2017)}]{hardy_lasenby17}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{{Hardy}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Lasenby}}},
+  \bibinfo{journal}{Journal of High Energy Physics}
+  \textbf{\bibinfo{volume}{2}}, \bibinfo{eid}{33} (\bibinfo{year}{2017}),
+  \eprint{1611.05852}.
+
+\bibitem[{\citenamefont{{Bjorken} et~al.}(2009)\citenamefont{{Bjorken},
+  {Essig}, {Schuster}, and {Toro}}}]{bjorken_etal09}
+\bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{{Bjorken}}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Essig}}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Schuster}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Toro}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{80}}, \bibinfo{eid}{075018}
+  (\bibinfo{year}{2009}), \eprint{0906.0580}.
+
+\bibitem[{\citenamefont{{Kaplinghat} et~al.}(2013)\citenamefont{{Kaplinghat},
+  {Tulin}, and {Yu}}}]{kaplinghat_etal13_whitepaper}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Kaplinghat}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Tulin}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.-B.} \bibnamefont{{Yu}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2013}),
+  \eprint{1308.0618}.
+
+\end{thebibliography}

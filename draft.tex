@@ -68,6 +68,8 @@
 
 %--- for comments
 \newcommand{\arz}[1]{{{\bf{\color{BrickRed}[ARZ: #1]}}}}
+\newcommand{\cbm}[1]{{{\bf{\color{Green}[CBM: #1]}}}}
+\newcommand{\akl}[1]{{{\bf{\color{Blue}[AKL: #1]}}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -121,17 +123,16 @@ much more strongly have been studied as an alternative to WIMP scenarios in nume
 dave_etal01,hisano_etal04,hisano_etal05,pospelov_etal08,arkani-hamed_etal08a,lattanzi_silk08,ackerman_etal09,feng_etal09,
 kong_etal15} \arz{Cameron: Please review the literature and add some more recent references here. 
 I know that Annika Peter has a few papers and Jonathan Feng probably has some more. 
-Ensuring that you are up to date on these papers is important.} 
-and constraints on self-interacting dark matter (SIDM) models have been explored by many authors \cite{yoshida_etal00,gnedin_ostriker01,miralda-escude02,randall_etal08,kamionkowski_profumo08,zentner09,robertson_zentner09,pieri_etal09,spolyar_etal09,finkbeiner_etal09,
-slatyer_etal09,bramante_etal14,albuquerque_etal14,kaplinghat_etal14,chen_etal14,feng_etal16,catena_widmark16}. 
-In this paper, we revisit and update astrophysical constraints on SIDM models from 
-supernova cooling.
+Ensuring that you are up to date on these papers is important.} \arz{As far as I can see, no new 
+references were added here or in any other relevant spots in the paper. Please do a literature search. At the very least, 
+I know of papers by Annika Peter and Jonathan Feng that may be relevant here.}
+and constraints on self-interacting dark matter (SIDM) models have been explored by many authors \cite{yoshida_etal00,gnedin_ostriker01,miralda-escude02,randall_etal08,kamionkowski_profumo08,zentner09,robertson_zentner09,pieri_etal09,spolyar_etal09,finkbeiner_etal09,slatyer_etal09,bramante_etal14,albuquerque_etal14,kaplinghat_etal14,chen_etal14,feng_etal16,catena_widmark16}. In this paper, we revisit and update astrophysical constraints on SIDM models from supernova cooling.
 
 
 SIDM models in which large self-interaction cross sections are mediated by sufficiently light 
 bosons ($M \lesssim 100$~GeV) can be constrained astrophysically using supernovae, particularly 
 SN1987A. Light gauge bosons will be produced within the hot supernova core, primarily through 
-brehmsstrahlung, and radiated. This non-standard energy loss mechanism can result in an energy loss rate 
+bremsstrahlung, and radiated. This non-standard energy loss mechanism can result in an energy loss rate 
 from the supernova core that is inconsistent with observations of neutrinos from SN1987A, 
 analogous to the classic constraint on axions \cite{turner88,raffelt96_book}. 
 This effect has already been exploited by Dent et al. \cite{dent_etal12}, Rrapaj and Reddy \cite{rrapaj_reddy16}, and 
@@ -145,24 +146,20 @@ In particular, we could not reproduce the constraints of Ref.~\cite{dent_etal12}
 study, we identified a number of errors in the analysis of Ref.~\cite{dent_etal12}. First, it is straightforward 
 to demonstrate that the kinematical relationships given in Appendix A of Ref.~\cite{dent_etal12} are 
 incorrect. Second, the squared matrix elements given in Eq.~(A3) and Eq.~(C18) of Ref.~\cite{dent_etal12} must 
-be incorrect. We have not been able to identify the errors which led to these incorrect expressions; however, 
-there must have been several oversights in the analysis of Ref.~\cite{dent_etal12}. For example, the squared 
-matrix elements in Eq.~(A3) and Eq.~(C18) do not obey the correct symmetries under interchange of incoming 
+be incorrect. These matrix elements do not obey the correct symmetries under interchange of incoming 
 and/or outgoing momenta. Furthermore, Ref.~\cite{dent_etal12} neglects the mass of the gauge boson, which 
 is legitimate in the classic case of the $\sim$meV-mass axion, but not in the present context. Finally, Ref.~\cite{dent_etal12} 
 employed an inconsistent model for the permitted energy loss rate from the supernova interior. Our work amounts 
 primarily to repeating the calculation of Ref.~\cite{dent_etal12} in order to rectify these oversights. Our primary 
 calculation treats nucleon scattering via one-pion exchange (OPE). We have repeated this analysis 
-using and effective field theory for the nucleon interaction and find very similar results so we do not 
-report on those in detail. \arz{I think we may want to add back in the EFT calculation for this paper. 
-That would at least give this paper something a bit unique when compared to the other papers on 
-the subject.}
+using an effective field theory for the nucleon interaction and find very similar results so we do not 
+report on those in detail.
 
 
 As we were completing our manuscript, two related papers were published. Rrapaj and Reddy \cite{rrapaj_reddy16} 
 computed bounds on mixing of the dark and standard model photons using a soft radiation approximation (SRA) 
-for dark photon Brehmsstrahlung. This has the distinct advantage of enabling nucleon scattering data to be used 
-directly in the estimation of the Brehmsstrahlung rate, but is only approximate because at large dark photon masses 
+for dark photon bremsstrahlung. This has the distinct advantage of enabling nucleon scattering data to be used 
+directly in the estimation of the bremsstrahlung rate, but is only approximate because at large dark photon masses 
 the radiated dark photons carry off considerable momentum and energy. We have been able to reproduce the 
 result of Rrapaj and Reddy \cite{rrapaj_reddy16} and find that the SRA plausibly results in only a factor or 
 $\sim 3$ underestimate of the upper bound on the dark photon mixing parameter at most. Moreover, 
@@ -208,9 +205,8 @@ We summarize our work and draw conclusions in Section~\ref{section:conclusions}.
 \section{Dark Photon Model of SIDM}
 \label{section:model}
 
-\arz{Need to add citations to many of the Feng et al. papers here.}
 We consider constraints on SIDM specifically within the context of dark electromagnetism models. 
-Dark electromagnetism models are models in which a hidden, dark, sector contains a broken U(1)$'$ 
+Dark electromagnetism models are models in which a hidden, dark sector contains a broken U(1)$'$ 
 symmetry and the U(1)$'$ gauge boson is kinetically mixed with the standard model photon. For the 
 purposes of this study, this is important because it demands that the Lagrangian contains terms such as 
 %
@@ -231,9 +227,9 @@ where $\varepsilon$ is the kinetic mixing parameter. The first term in this
 interaction Lagrangian gives rise to the dark matter self-interactions. 
 
 Dark gauge bosons are produced in astrophysical environments such as supernova 
-cores primarily via brehmsstrahlung off of standard model particles. This brehmsstrahlung 
+cores primarily via bremsstrahlung off of standard model particles. This bremsstrahlung 
 occurs through the $\varepsilon q$ coupling to charged standard model particles, 
-in this  particular case the proton and pion. The rate of brehmsstrahlung 
+in this  particular case the proton and pion. The rate of bremsstrahlung 
 depends upon both $\varepsilon$ and the mass of the $\Aprime$. Consequently, 
 supernova cooling can constrain the mixing $\varepsilon$ as a function of 
 $m_{\Aprime}$ for such models. Delineating such a constraint is the 
@@ -244,15 +240,15 @@ primary aim of this paper.
 \section{Methods}
 \label{section:computational}
 	
-We aim to estimate the rate of energy loss from the core of a supernova from $\Aprime$ brehmsstrahlung 
+We aim to estimate the rate of energy loss from the core of a supernova from $\Aprime$ bremsstrahlung 
 during nucleon-nucleon interactions. The calculation is analogous to the well-known estimate of axion 
 emission from supernova cores described in Ref.~\cite{raffelt96_book} and references therein, but is 
 more complicated because the mass of the $\Aprime$, unlike the mass of the axion, is not necessarily 
 negligible. This section describes the calculation of the rate of energy loss from a supernova core 
-from $\Aprime$ brehmsstrahlung. 
+from $\Aprime$ bremsstrahlung. 
 
-The brehmsstrahlung process is not the only process with which we must be concerned. Clearly, the rate of 
-brehmsstrahlung will increase with $\varepsilon$; however, $\varepsilon$ can become sufficiently large 
+The bremsstrahlung process is not the only process with which we must be concerned. Clearly, the rate of 
+bremsstrahlung will increase with $\varepsilon$; however, $\varepsilon$ can become sufficiently large 
 that the radiated gauge bosons do not escape the supernova. This happens if the $\Aprime$ particles 
 either decay to or interact with standard model particles prior to exiting the supernova core. 
 In either case, the energy is not lost and the $\Aprime$ does not provide a cooling channel for the supernova. 
@@ -262,11 +258,10 @@ constraints in this section as well. However, we note that terrestrial experimen
 mixing parameters higher than the upper limits of the SN1987A forbidden region, so a precise estimate 
 of these upper limits is not necessary.
 
-%-- Brehmsstrahlung--	
-\subsection{Brehmsstrahlung of $\Aprime$ Bosons}
+%-- bremsstrahlung--	
+\subsection{bremsstrahlung of $\Aprime$ Bosons}
 
-
-There are two processes to consider in order to estimate the rate of energy loss via $\Aprime$ brehmsstrahlung. The first is  
+There are two processes to consider in order to estimate the rate of energy loss via $\Aprime$ bremsstrahlung. The first is  
 proton-proton (pp) scattering with the bremsstrahlung of the dark photon off the proton; $p+p \rightarrow p+p+\Aprime$. 
 The second is proton-neutron (pn) scattering with bremsstrahlung off of either the proton or the charged pion; 
 $p+n \rightarrow p+n+\Aprime$. We estimate the rates for these processes using the one-pion exchange (OPE) 
@@ -291,9 +286,9 @@ momenta.}
 \begin{figure}
 \includegraphics[width=8cm]{npdiagram.pdf}
 \caption{One of the five Feynman diagrams for the np process. This particular diagram shows 
-internal brehmsstrahlung off of the charged pion. The remaining four diagrams are analogous to the 
+internal bremsstrahlung off of the charged pion. The remaining four diagrams are analogous to the 
 pp diagram shown in Fig.~\ref{fig:ppdiagram}. In the case of the np processes, there are only four 
-diagrams for brehmsstrahlung off of the external legs because two of the legs correspond to the 
+diagrams for bremsstrahlung off of the external legs because two of the legs correspond to the 
 uncharged neutron.}
 \label{fig:npdiagram}
 \end{figure}
@@ -305,51 +300,45 @@ because the mass of the $\Aprime$ boson is not necessarily negligible in the kin
 region of interest for supernova explosions. The correct kinematical relations are 
 %
 \bea 
-p_1 \cdot p_2 &=& M_N^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot \qa,\\
-p_1 \cdot p_3 &=& M_N^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot \qa,\\  
-p_1 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2}{2} + p_4 \cdot \qa, \\
-p_2 \cdot p_3 &=& M_N^2 - \frac{l^2}{2}, \\ 
-p_2 \cdot p_4 &=& M_N^2 - \frac{k^2}{2},\quad \mathrm{and}\\
-p_3 \cdot p_4 &=& k \cdot l + M_N^2 - \frac{l^2 + k^2}{2},
+p_1 \cdot p_2 &=& M_{\mathrm N}^2 - \frac{l^2}{2} - \frac{k^2}{2} + p_2 \cdot \qa,\\
+p_1 \cdot p_3 &=& M_{\mathrm N}^2 + k \cdot l - \frac{k^2}{2} + p_3 \cdot \qa,\\  
+p_1 \cdot p_4 &=& k \cdot l + M_{\mathrm N}^2 - \frac{l^2}{2} + p_4 \cdot \qa, \\
+p_2 \cdot p_3 &=& M_{\mathrm N}^2 - \frac{l^2}{2}, \\ 
+p_2 \cdot p_4 &=& M_{\mathrm N}^2 - \frac{k^2}{2},\quad \mathrm{and}\\
+p_3 \cdot p_4 &=& k \cdot l + M_{\mathrm N}^2 - \frac{l^2 + k^2}{2},
 \eea
 %
 where $p_1$ and $p_2$ are the four-momenta of the incoming nucleons, $p_3$ and $p_4$ are the momenta 
-of the outgoing nucleons, $\qa$ is the $\Aprime$ momentum, $k=p_2 - p_3$, $l=p_2 - p_4$, and $M_{\mathrm{N}}$ 
+of the outgoing nucleons, $\qa$ is the $\Aprime$ momentum, $k=p_2 - p_4$, $l=p_2 - p_3$, and $M_{\mathrm{N}}$ 
 is the nucleon mass. These kinematical relations correct the relations in Ref.~\cite{dent_etal12}.
 
-\arz{Cameron, can you double check this? I think there were some errors in the momenta and in the relative 
-signs of the diagrams. I tried to fix them. Please go over this VERY carefully.}
 
 The eight diagrams contribute the following eight terms to the pp amplitude, 
 %
 \begin{widetext}
 \begin{eqnarray}
-	M_1 &=& \frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_1}\ 
+	M_1 &=& \frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 - 2 \qa \cdot p_1}\ 
 	\bar{u}(p_4) \gamma_5 u(p_2)\  \bar{u}(p_3) \gamma_5 (\slashed{p}_1 - \qa +M_N)\slashed \epsilon  u(p_1), \\
-	M_2 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_1}\  
+	M_2 &=& -\frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 - 2 \qa \cdot p_1}\  
 	\bar{u}(p_3) \gamma_5 u(p_2)\  \bar{u}(p_4) \gamma_5 (\slashed{p}_1 - \qa +M_N)\slashed{\epsilon} u(p_1),\\
-	M_3 &=& \frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_2}\ 
+	M_3 &=& \frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 - 2 \qa \cdot p_2}\ 
 	\bar{u}(p_3) \gamma_5 u(p_1)\ \bar{u}(p_4) \gamma_5 (\slashed{p}_2 - \qa +M_N)\slashed \epsilon  u(p_2), \\
-	M_4 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 - 2 \qa \cdot p_2}\ 
+	M_4 &=& -\frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 - 2 \qa \cdot p_2}\ 
 	\bar{u}(p_4) \gamma_5 u(p_1)\ \bar{u}(p_3) \gamma_5 (\slashed{p}_2 - \qa +M_N)\slashed \epsilon  u(p_2), \\
-	M_5 &=& \frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_3}\
-	\bar{u}(p_3) \gamma_5 u(p_1)\ \bar{u}(p_4) \slashed{\epsilon} (\slashed{p}_3 + \qa +M_N)\gamma_5 u(p_2),\\
-	M_6 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_3}\ 
+	M_5 &=& \frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 + 2 \qa \cdot p_3}\
+	\bar{u}(p_4) \gamma_5 u(p_2)\ \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_3 + \qa +M_N)\gamma_5 u(p_1),\\
+	M_6 &=& -\frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 + 2 \qa \cdot p_3}\ 
 	\bar{u}(p_4) \gamma_5 u(p_1)\ \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_3 + \qa +M_N)\gamma_5 u(p_2),\\
-	M_7 &=& \frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_4}\ 
-	\bar{u}(p_4) \gamma_5 u(p_2)\ \bar{u}(p_3) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_1),\\
-	M_8 &=& -\frac{4 M_N}{ m_\pi} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{A^\prime}^2 + 2 \qa \cdot p_4}\ 
+	M_7 &=& \frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{k^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 + 2 \qa \cdot p_4}\ 
+	\bar{u}(p_3) \gamma_5 u(p_1)\ \bar{u}(p_4) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_2),\\
+	M_8 &=& -\frac{4 M_{\mathrm N}^2}{ m_\pi^2} \frac{f_{\mathrm{pp}}^2\, e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{m_{\mathrm{\Aprime}}^2 + 2 \qa \cdot p_4}\ 
 	\bar{u}(p_3) \gamma_5 u(p_2)\ \bar{u}(p_4) \slashed{\epsilon} (\slashed{p}_4 + \qa +M_N)\gamma_5 u(p_1),
 \end{eqnarray}
 \end{widetext}
 %
 where the dark photon polarization is given by $\epsilon^{\nu}$. These expressions are identical to those 
 given in Ref.~\cite{dent_etal12}; however, they do not simplify significantly if the correct kinematics are used. 
-Unfortunately, with the kinematical relations above, the squared amplitude does not yield a tidy expression 
-for the spin-averaged squared matrix element. Our result contains over 200 terms, 
-so we do not reproduce it here for reasons of convenience. However, we note that 
-our result for $\vert \mathcal{M}_{\mathrm{pp}} \vert^2$ is symmetric 
-under exchange of $k$ and $l$ as required. 
+Our result contains over 200 terms, so we do not reproduce it here for reasons of convenience. However, we note that our result for $\vert \mathcal{M}_{\mathrm{pp}} \vert^2$ is symmetric under exchange of $k$ and $l$ as required. 
 
 The pn process contains four diagrams analogous to the the diagrams for the pp process (only four, of course, 
 because the neutrons cannot radiate the $\Aprime$). The new diagram that is relevant in the pn process is shown in 
@@ -358,7 +347,7 @@ Fig.~\ref{fig:npdiagram} and yields a contribution of
 \begin{widetext}
 \begin{equation}
 M'_5 = \frac{4 M_N}{ m_\pi} \frac{f_{pn}^2 e\, \varepsilon}{l^2-m_\pi^2}  \frac{1}{(l-\qa)^2 - m_\pi^2} 
-\bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p_4) \gamma_5 u(p_2) (\qa - 2l)\cdot \varepsilon.
+\bar{u}(p_3) \gamma_5 u(p_1) \bar{u}(p_4) \gamma_5 u(p_2) (\qa - 2l)\cdot \epsilon.
 \end{equation}
 \end{widetext}
 %
@@ -405,23 +394,19 @@ The nucleons in the core are comfortably non-degenerate and non-relativistic,
 so the Pauli blocking factor is omitted from Eq.~(\ref{eq:rate1}) and we take 
 all nucleons to have a Maxwell-Boltzmann phase-space distribution distribution, 
 \beq
-f(p) =  \frac{n_b}{2} \left( \frac{2 \pi}{M_N T} \right)^{3/2} \exp \left(-\frac{p^2}{2 M_N T} \right).
+f(p) =  \frac{n_{\mathrm{b}}}{2} \left( \frac{2 \pi}{M_{\mathrm{N}} T} \right)^{3/2} \exp \left(-\frac{p^2}{2 M_{\mathrm{N}} T} \right).
 \eeq
 %
 We choose a baryon number density of $n_{\mathrm{b}} \approx 1.8 \times 10^{38}\, \mathrm{cm}^{-3}$ and a 
 core supernova temperature of $T = 30\, \mathrm{MeV}$, both of which are typical choices and thought to 
-be representative of supernova cores. \arz{Need to put a citation here for the properties of supernova cores. 
-I can probably find something in the literature, but please put something here if you have a citation.}
+be representative of supernova cores.
 
 
-We performed the phase space integrals using the Monte Carlo routines in the {\tt CUBA} library. 
-\arz{There needs to be some reference, citation, or some other information give about this library here.} 
+We performed the phase space integrals using the Monte Carlo routines in the {\tt CUBA} library \cite{Hahn:2004fe}.
 We integrated over the momenta $\vec{p}_1$, $\vec{p}_2$, $\vec{p}_3$, and the direction of the 
 three-momentum of the radiated boson $\hat{q}_{\mathrm{A}'}$, after fixing $\vec{p}_4$ 
-and the magnitude of $\vec{q}_{\mathrm{A}'}$ using the delta functions. 
-\arz{Cameron, can you double check this to be sure that it is correct? I rephrased it a bit, 
-but I found the earlier phrasing to be a bit ambiguous and I can't remember which choice 
-you made.} We used the {\tt suave} method provided within {\tt CUBA}, which combines 
+and the magnitude of $\vec{q}_{\mathrm{A}'}$ using the delta functions.
+ We used the {\tt suave} method provided within {\tt CUBA}, which combines 
 importance sampling and adaptive subdivision, as this method provided the best compromise 
 between accuracy and run-time for this particular application.
 
@@ -446,7 +431,7 @@ mixing parameter $\varepsilon$.}. Following previous studies, the energy loss ra
 particles cannot exceed 
 %
 \begin{equation}
-\left( \frac{L_{\mathrm{max}}}{M} \right) \approx 10^{19} \, \frac{\mathrm{erg}}{\mathrm{g}\, \mathrm{s}}
+\left( \frac{L_{\mathrm{max}}}{M} \right) \approx 10^{19} \, \frac{\mathrm{erg}}{\mathrm{g}\cdot \mathrm{s}}
 \end{equation}
 %
 without significantly reducing the duration of the neutrino burst observed at Earth for SN1987A 
@@ -482,49 +467,27 @@ and we discuss these effects in the next two subsections.
 One upper limit to the excluded values of $\varepsilon$ may be found by considering 
 decay of the dark bosons into Standard Model particles. Standard model particles will 
 scatter and thermalize on a timescale much shorter than the timescale for the evolution 
-of the core, so decays contribute little to the cooling of the stellar core. 
-
-\arz{I removed reference to $N_{\rm eff}$ because for us $N_{\rm eff}=1$ (doesn't it? the 
-only kinematically-allowed decay is to electron-positron pairs, correct?). I also rephrased a 
-little bit. Please review this.}
+of the core, so decays within the core contribute little to the supernova cooling. 
 
 The dark boson has a typical lifetime of
 \begin{equation}
 \tau_{\mathrm{A}'} = \frac{3}{\varepsilon^2 \alpha m_{\mathrm{A}'}},
 \end{equation}
-where $\alpha$ is the fine structure constant. Therefore, in the relativistic limit, 
+where $\alpha$ is the fine structure constant. Therefore,
 the typical travel distance to decay is given by 
 %
 \beq
 \label{eq:decaylength}
-l = \gamma \tau_{\mathrm{A}'} = \frac{3 E_{\mathrm{A}'}}{N_{eff} m_{\mathrm{A}'}^2 \varepsilon^2},
+l = \beta \tau_{\mathrm{A}'} = \frac{3 q_{\mathrm{A}'}}{\varepsilon^2 \alpha m_{\mathrm{A}'}^2},
 \eeq
 and so the fraction escaping the supernova before decaying may be estimated as (e.g., Ref.~\cite{bjorken_etal09})
 \beq
 \label{eq:decayfactor}
 \exp \left( - \frac{r_{\mathrm{decay}}}{l} \right) = 
-\exp \left( - \frac{r_{\mathrm{decay}} m_{\mathrm{A}'}^2 \varepsilon^2}{3 E_{\mathrm{A}'}} \right),
+\exp \left( - \frac{r_{\mathrm{decay}} m_{\mathrm{A'}}^2\alpha \varepsilon^2}{3 q_{\mathrm{A'}}} \right),
 \eeq
 %
-an approximation which is valid so long as the size of the supernova within which standard model decay 
-products can interact and be thermalized is significantly larger than the region within which $\Aprime$ are produced, 
-an assumption which should be satisfied comfortably. 
-To account for the suppression of gauge boson luminosity due to decays we simply multiply the phase space 
-integrand in Eq.~(\ref{eq:rate1}) by the exponential suppression factor, after which the calculation proceeds 
-as in the previous subsection. The limit is derived in the same way, 
-with the additional complication that $I_{\mathrm{A}'}$ is now a function of $\varepsilon $, in addition to $m_{\mathrm{A}'}$ and $T$. 
-The constraint Eq.~(\ref{eq:bound1}), therefore, becomes a transcendental equation that must be solved numerically. 
-
-
-\arz{I have a few questions here. First, what did you choose for the value or $r_{\mathrm{decay}}$? This must 
-be specified explicitly in the text. Please do so as soon as possible.
- 
-Second, this treatment is valid under the assumption of relativistic dark photons. However, it is not clear to me that this limit is 
-the appropriate limit. This limit is valid when $m_{\mathrm{A}'} < T = 30 \, \mathrm{MeV}$. However, I think that 
-the decays only become more important than trapping for masses $m_{\mathrm{A}'} \gtrsim 30\, \mathrm{MeV}$. 
-This suggests that we should use the non-relativistic limit here. Do I misunderstand something? Let us address this 
-as soon as possible. Please let me know what you think.}
-
+where $r_\mathrm{decay}$ is chosen to be 10 km, since the density of the supernova drops quickly around that size. This approximation should be valid so long as the size of the supernova within which standard model decay products can interact and be thermalized is significantly larger than the region within which $\Aprime$ are produced, an assumption which should be satisfied comfortably. To account for the suppression of gauge boson luminosity due to decays we simply multiply the phase space integrand in Eq.~(\ref{eq:rate1}) by the exponential suppression factor, after which the calculation proceeds as in the previous subsection. The limit is derived in the same way, with the additional complication that $I_{\mathrm{A}'}$ is now a function of $\varepsilon $, in addition to $m_{\mathrm{A}'}$ and $T$. The constraint Eq.~(\ref{eq:bound1}), therefore, becomes a transcendental equation that must be solved numerically. 
 
 The luminosity in $\Aprime$ will be an increasing function of $\varepsilon$ until decays suppress the gauge boson luminosity, 
 at which point $L_{\mathrm{A}'}$ becomes a rapidly decreasing function of $\varepsilon$. Therefore, the excluded values of 
@@ -538,9 +501,6 @@ the previous subsection) than the upper boundary of the exclusion region.
 %---------------------------------- TRAPPING	
 \subsection{Trapping limit}
 
-\arz{This section needs some work as it is a bit hard to follow.}
-
-
 The second effect that produces an upper bound on the excluded region 
 comes from considering trapping of dark bosons within the supernova. 
 With a large enough coupling, the dark photons will thermalize and then 
@@ -548,13 +508,14 @@ will be emitted from an approximately spherical ``dark photosphere" at the radia
 where the $\Aprime$ mean free path becomes larger than the typical size of the supernova core. 
 In this case the luminosity is given simply by Stefan's law, 
 \beq
-L_{\mathrm{A'}}  = 4\pi \rdp^2 T_{\mathrm{A}'}^4 \sigma,
+L_{\mathrm{A'}}  = 4\pi \rdp^2 T_{\mathrm{A'}}^4 \sigma,
 \eeq
-where $\rdp$ is now the radius of the emitting shell and $T_{\mathrm{A}'}$ its temperature. 
+where $\rdp$ is now the radius of the emitting shell and $T_{\mathrm{A'}}$ its temperature. 
 We estimate the radius of this dark photosphere as $\rdp=10$ km, 
-because the density of the supernova drops drastically around that point. 
-\arz{We need a citation for this statement, but I do not know one off of the top of my head.}
-The bound on the luminosity can then be recast as a bound on $T_{\mathrm{A}'}$, 
+because the density of the supernova drops drastically around that point. We will 
+confirm shortly that this estimate is consistent within the context of the simple model that we 
+adopt for the interior structure of the supernova atmospherer. The bound on the luminosity can then 
+be recast as a bound on $T_{\mathrm{A}'}$, 
 %
 \beq
 T_{\mathrm{A}'} \lesssim 9.6\rm\ MeV.
@@ -565,18 +526,13 @@ simple model for the supernova atmosphere, assuming that the particles are emitt
 at a point where the optical depth to scattering is $\tau = 2/3 $, and finding the temperature that corresponds 
 to that optical depth. 
 
-\arz{In what follow ALL SUBSCRIPTS SHOULD BE MADE CONSISTENT WITH PRD CONVENTIONS. Please 
-make all subscripts in roman type using ``mathrm." Please take $A \rightarrow \Aprime$, and so on.}
-
-This is a somewhat involved calculation. First, one needs a model for 
-the density and temperature in the supernova. Following \cite{turner88}, 
-we assume a simple power-law model for the supernova core, with 
+This is a somewhat involved calculation. First, one needs a model for the density and temperature in the supernova. Following the simple, early model of Ref.~\cite{turner88}, we assume a simple power-law model for the supernova core, with 
 \bea
 \rho &=& \rho_{\mathrm{p}} \left( \frac{R}{r}\right )^n,\\
 T &=& T_{\mathrm{R}} \left[ \frac{\rho(r)}{\rho_{\mathrm{p}}} \right]^{1/3},
 \eea
-with $  \rho_{\mathrm{p}}  = 3\times10^{14}\ {\rm g/cm}^3$, $T_{\mathrm{R}} = 30$~MeV, 
-and $n = 5$. \arz{What is R?}
+with $  \rho_{\mathrm{p}}  = 3\times10^{14}\ {\rm g/cm}^3$, $T_{\mathrm{R}} = 30$~MeV, $R = 10$ km,
+and $n = 5$.
 The optical depth is given by 
 \beq
 \tau = \int_{r_x}^{\infty}\, \kappa \rho\,  \dd r,
@@ -592,41 +548,34 @@ where $ \kappa$ is the opacity, which we take to be the Rosseland mean
 where $l_{\mathrm{A'}}$ is the mean free path. 
 
 
-The inverse mean free path can readily be obtained by modifying $ Q_i $, 
-the expression for the energy loss rate, as follows: removing the factor of $ E_A $ 
-and the phase space integral over $ \qa $, and adding a factor of $ e^{E_A/T} $ for detailed balance. 
+The inverse mean free path can be obtained by modifying $ Q_i $, 
+the expression for the energy loss rate, as follows: removing the factor of $ E_\mathrm{A'} $ 
+and the phase space integral over $ \qa $, and adding a factor of $ e^{E_\mathrm{A'}/T} $ for detailed balance. 
 \arz{I'm not sure that I follow this somewhat cavalier statement about detailed balance. Can someone 
 please explain this to me when we meet. In my earlier rounds of thinking about this, I took that factor 
 at face value as given, assuming I'd eventually be able to figure out where it comes from.} 
 This gives the inverse mean free path as a function of mass and coupling. 
-Again, we perform the required integration numerically. \arz{Do you use the same software package here? 
-If so, you must say so.} 
+Again, we perform the required integration numerically using the {\tt CUBA }package. 
 This then allows the calculation of $\kappa_{\mathrm{pp}}$ and $\kappa_{\mathrm{pn}}$, 
-which are the opacities due to inverse brehmsstrahlung for proton-proton and proton-neutron 
+which are the opacities due to inverse bremsstrahlung for proton-proton and proton-neutron 
 processes respectively. These dominate the opacity of the star to $A'$ propagation. 
 The inverse opacities for the $pn$ and $pp$ processes add, 
-giving the total opacity $ \kappa^{-1} = \kappa_{pp}^{-1} + \kappa_{pn}^{-1} $
+giving the total opacity $ \kappa^{-1} = \kappa_{\mathrm{pp}}^{-1} + \kappa_{\mathrm{pn}}^{-1} $
 
 
 Having obtained an expression for $ \kappa $, we can now find the optical depth as follows. 
-Define a typical optical depth as $\tau_R = \kappa_R \rho_R R $. We then have 
+Define a typical optical depth as $\tau_\mathrm{R} = \kappa_\mathrm{R} \rho_\mathrm{R} R $. We then have 
 \beq 
-\kappa \rho R = \tau_R \left( \frac{\rho}{\rho_R} \right)^2 \left( \frac{T_R}{T} \right)^{3/2}.
+\kappa \rho R = \tau_\mathrm{R} \left( \frac{\rho}{\rho_\mathrm{R}} \right)^2 \left( \frac{T_\mathrm{R}}{T} \right)^{3/2}.
 \eeq
 %
 This can be combined with the previous expressions for the density and temperature as a function of position 
 and plugged in to the integral expression for the optical depth to obtain 
 \bea 
-\tau &=& \int_{r_x}^{\infty}\, \tau_R \left( \frac{R}{r} \right)^{3n/2} \dd r \\
- &=& \frac{\tau_r}{\frac{3n}{2}-1} \left( \frac{T_A}{T_R} \right)^{(9/2-3/n)}. 
+\tau &=& \int_{r_x}^{\infty}\, \tau_\mathrm{R} \left( \frac{R}{r} \right)^{3n/2} \dd r \\
+ &=& \frac{\tau_\mathrm{r}}{\frac{3n}{2}-1} \left( \frac{T_\mathrm{A'}}{T_\mathrm{R}} \right)^{(9/2-3/n)}. 
  \eea
- The bound on the coupling is obtained by requiring  $ \tau(\varepsilon,m_A) \le 2/3 $
- 
- \arz{It seems as though you can check the consistency of your assumptions can 
- be checked within this calculation. For example, you can actually use this calculation 
- to estimate the radius at which $\tau=2/3$ and see if it is actually close to 
- $10$~km. Have you done this?}
- 
+ The bound on the coupling is obtained by requiring  $ \tau(\varepsilon,m_\mathrm{A'}) \le 2/3 $. Note that strictly speaking we should have determined $ r_{\mathrm{dp}}$ rather than assuming a value. However, it is possible to verify the self-consistency of our assumption using this model for the supernova atmosphere. In particular, this model implies that an optical depth of $\tau=2/3$ is reached at a radial position of $ r_{\mathrm{dp}}=XXXX$,  validating the assumption made at the outset. \arz{Put in the missing number here.}
 
 As we stated in the previous subsection, the approximate treatment of the upper limit of the exclusion region 
 is justified by the fact that values of $\varepsilon$ close to the upper limit of the exclusion region are 
@@ -640,12 +589,10 @@ ruled out by independent, terrestrial experiments.
 
 
 \begin{figure*}[th]
-\includegraphics[width=14cm]{constraint.pdf}
+\includegraphics[width=14cm]{compiledbounds_edited.pdf}
 \caption{
 Constraints on dark photon models. Our primary result is the excluded region 
-in the $varepsilon$-$m_{\mathrm{A'}}$ plane shaded in blue. 
-\arz{Cameron, can you describe clearly each line in this caption. Yellow is 
-too hard to see, so please choose another color for this line.}
+in the $\varepsilon$-$m_{\mathrm{A'}}$ plane shaded in blue. The red curve is our attempts to reproduce exactly Ref.~\cite{dent_etal12}, while the black curve is Ref.~\cite{dent_etal12} but with the correct luminosity constraint.  The purple curve is using the SRA fixing the cross section using nuclear scattering data, while the green curve uses the soft radiation approximation of the OPE result.  \arz{The labels in the figure legend appear to be incorrect now.}
 }
 \label{fig:constraint}
 \end{figure*}
@@ -671,17 +618,17 @@ equations for the dark photon luminosity, but the correct limit on the energy lo
 results in the red line in Fig.~\ref{fig:constraint}. As Ref.~\cite{dent_etal12}, our primary 
 result uses a OPE model for nucleon interactions, so the entirety of the difference between 
 the red line and the lower bound of our exclusion region stems from an incorrect estimate 
-of the brehmsstrahlung rate in Ref.~\cite{dent_etal12}. 
+of the bremsstrahlung rate in Ref.~\cite{dent_etal12}. 
 
 
 Rrapaj and Reddy \cite{rrapaj_reddy16} estimated $A'$ luminosity 
 using the SRA for nucleon interactions, which enabled them to use 
-nuclear scattering data in the estimation of the brehmsstrahlung rate. 
+nuclear scattering data in the estimation of the bremsstrahlung rate. 
 This approach overcomes the shortcomings of the OPE approximation, 
 though at high dark photon masses this approximation breaks down. 
 We have repeated the calculation in the SRA as described in 
 Rrapaj and Reddy \cite{rrapaj_reddy16} and our result is 
-shown as the yellow line in Fig.~\ref{fig:constraint}. 
+shown as the purple line in Fig.~\ref{fig:constraint}. 
 Our SRA result is in excellent agreement with Ref.~\cite{rrapaj_reddy16}. It is 
 also worth noting that the SRA and OPE approximations yield constraints 
 on $\varepsilon$ that agree quite well with each other. This suggests, of course, 
@@ -689,15 +636,12 @@ that the discrepancy between Ref.~\cite{dent_etal12} and Ref.~\cite{rrapaj_reddy
 stems primarily from errors in Ref.~\cite{dent_etal12} and not to the OPE model 
 of nucleon interactions. In an effort to estimate 
 the possible shortcomings of the SRA approximation, the green line in 
-Fig.~\ref{fig:constraints} shows the lower bound on the excluded region that 
+Fig.~\ref{fig:constraint} shows the lower bound on the excluded region that 
 we drive using the SRA along with OPE expressions for nucleon scattering 
 cross sections. As one can see, the SRA is in good agreement with the full 
 OPE bound. Consequently, we suggest that use of the SRA in this context 
 results in an overestimate of the lower limit on $\varepsilon$ of less than 
 a factor or three. 
-
-
-
 
 %--------------------------- CONCLUSIONS
 \section{Discussion}
@@ -713,7 +657,6 @@ mixes with the standard model photon through a kinetic mixing term.
 
 \acknowledgments
 
-\arz{CBM was supported somehow by AKL.}
 AKL was supported in part by NSF grant PHY-1519175. 
 ARZ was supported in part by the DoE through Grant DE-SC0007914 and by 
 the Pittsburgh Particle physics Astrophysics and Cosmology Center (Pitt PACC) 
