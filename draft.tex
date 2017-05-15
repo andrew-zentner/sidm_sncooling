@@ -273,7 +273,7 @@ in Fig.~\ref{fig:ppdiagram}; the remaining seven diagrams come from placing the 
 on each of the other three protons and then, for each of these, interchanging the outgoing momenta. 
 For the pn case, there are five diagrams, four of which are analogous to the pp diagram shown in 
 Fig.~\ref{fig:ppdiagram}. The fifth diagram, shown in Fig.~\ref{fig:npdiagram}, corresponds to 
-emission of the $\Aprime$ from the exchanged, charged pion. \akl{Cameron, can you make the $A' \to \mathrm{A'}$ in figures 1 and 2?}
+emission of the $\Aprime$ from the exchanged, charged pion. \akl{Andrew, can you make the $A' \to \mathrm{A'}$ in figures 1 and 2?}
 
 %-------------- PP Feynman Diagram
 \begin{figure}
@@ -552,10 +552,10 @@ where $l_{\mathrm{A'}}$ is the mean free path.
 
 The inverse mean free path can be obtained by modifying $ Q_i $, 
 the expression for the energy loss rate, as follows: removing the factor of $ E_\mathrm{A'} $ 
-and the phase space integral over $ \qa $, and adding a factor of $ e^{E_\mathrm{A'}/T} $ for detailed balance. 
+and the phase space integral over $ \qa $, and adding a factor of $ e^{E_\mathrm{A'}/T} $ for detailed balance. This factor comes from turning the $\mathrm{A'}$ from an outgoing to an incoming state in the calculation.  See, e.g., Eq.~(4.43) in \cite{raffelt96_book}.
 \arz{I'm not sure that I follow this somewhat cavalier statement about detailed balance. Can someone 
 please explain this to me when we meet. In my earlier rounds of thinking about this, I took that factor 
-at face value as given, assuming I'd eventually be able to figure out where it comes from.} 
+at face value as given, assuming I'd eventually be able to figure out where it comes from.} \akl{Is that good enough?}
 This gives the inverse mean free path as a function of mass and coupling. 
 Again, we perform the required integration numerically using the {\tt CUBA }package. 
 This then allows the calculation of $\kappa_{\mathrm{pp}}$ and $\kappa_{\mathrm{pn}}$, 
@@ -577,7 +577,7 @@ and plugged in to the integral expression for the optical depth to obtain
 \tau &=& \int_{r_x}^{\infty}\, \tau_\mathrm{R} \left( \frac{R}{r} \right)^{3n/2} \dd r \\
  &=& \frac{\tau_\mathrm{r}}{\frac{3n}{2}-1} \left( \frac{T_\mathrm{A'}}{T_\mathrm{R}} \right)^{(9/2-3/n)}. 
  \eea
- The bound on the coupling is obtained by requiring  $ \tau(\varepsilon,m_\mathrm{A'}) \le 2/3 $. Note that strictly speaking we should have determined $ r_{\mathrm{dp}}$ rather than assuming a value. However, it is possible to verify the self-consistency of our assumption using this model for the supernova atmosphere. In particular, this model implies that an optical depth of $\tau=2/3$ is reached at a radial position of $ r_{\mathrm{dp}}=XXXX$,  validating the assumption made at the outset. \arz{Put in the missing number here.} As we stated in the previous subsection, the approximate treatment of the upper limit of the exclusion region is justified by the fact that values of $\varepsilon$ close to the upper limit of the exclusion region are ruled out by independent, terrestrial experiments.
+ The bound on the coupling is obtained by requiring  $ \tau(\varepsilon,m_\mathrm{A'}) \le 2/3 $. Note that strictly speaking we should have determined $ r_{\mathrm{dp}}$ rather than assuming a value. However, it is possible to verify the self-consistency of our assumption using this model for the supernova atmosphere. In particular, this model implies that an optical depth of $\tau=2/3$ is reached at a radial position of $ r_{\mathrm{dp}}= 11$ km,  validating the assumption made at the outset. As we stated in the previous subsection, the approximate treatment of the upper limit of the exclusion region is justified by the fact that values of $\varepsilon$ close to the upper limit of the exclusion region are ruled out by independent, terrestrial experiments.
 
 
 %-------------------- RESULTS
@@ -590,7 +590,7 @@ and plugged in to the integral expression for the optical depth to obtain
 \includegraphics[width=14cm]{compiledbounds_edited.pdf}
 \caption{
 Constraints on dark photon models. Our primary result is the excluded region 
-in the $\varepsilon$-$m_{\mathrm{A'}}$ plane shaded in blue. The red curve is our attempts to reproduce exactly Ref.~\cite{dent_etal12}, while the black curve is Ref.~\cite{dent_etal12} but with the correct luminosity constraint.  The purple curve is using the SRA fixing the cross section using nuclear scattering data, while the green curve uses the soft radiation approximation of the OPE result.  \arz{The labels in the figure legend appear to be incorrect now.} \akl{In the legend, the red and black lines need to be switched, and the "Full excluded region" needs to be switched with the "SRA using OPE model".}
+in the $\varepsilon$-$m_{\mathrm{A'}}$ plane shaded in blue. The red curve is our attempts to reproduce exactly Ref.~\cite{dent_etal12}, while the black curve is Ref.~\cite{dent_etal12} but with the correct luminosity constraint.  The purple curve is using the SRA fixing the cross section using nuclear scattering data, while the green curve uses the soft radiation approximation of the OPE result.  \arz{The labels in the figure legend appear to be incorrect now.} \akl{In the legend, the red and black lines need to be switched, and the "Full excluded region" needs to be switched with the "SRA using OPE model". Also, can you put a cdot or space between erg and s in the vertical label.}
 }
 \label{fig:constraint}
 \end{figure*}
