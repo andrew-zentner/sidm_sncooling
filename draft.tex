@@ -105,7 +105,7 @@
 \begin{abstract} 
 \baselineskip 3.0ex   
 
-We revisit SN1987A constraints on light, hidden sector gauge bosons (``dark photon'') that are coupled to the standard model through kinetic mixing with the photon. These constraints are realized because excessive bremsstrahlung radiation of the dark photon can lead to rapid cooling of the SN1987A progenitor core, in contradiction to the observed neutrinos from that event. The models we consider are of interest as phenomenological models of strongly self-interacting dark matter (SIDM). We clarify several possible ambiguities in the literature and identify errors in prior analyses. We find constraints on the dark photon mixing parameter that are in rough agreement with the early estimates of Dent et al. \cite{dent_etal12}, but only because significant errors in their analyses fortuitously canceled. Our constraints are in good agreement with subsequent analyses by Rrapaj \& Reddy \cite{rrapaj_reddy16} and Hardy \& Lasenby \cite{hardy_lasenby17}. We estimate the dark photon bremsstrahlung rate using one-pion exchange (OPE), while Rrapaj \& Reddy use a soft radiation approximation (SRA) to exploit measured nuclear scattering cross sections. We find that the differences between mixing parameter constraints obtained through the OPE approximation, the SRA approximation, or an effective field theory model of nuclear interactions are roughly a factor of $\sim 2-3$. Hardy \& Laseby \cite{hardy_lasenby17} include plasma effects in their calculations finding significantly weaker constraints on dark photon mixing for dark photon masses below $\sim 10\, \mathrm{MeV}$. We do not consider plasma effects. Lastly, we point out that the properties of the SN1987A progenitor core remain somewhat uncertain and that this uncertainty alone causes uncertainty of at least a factor or $\sim 2-3$ in the excluded values of the dark photon mixing parameter. Further refinement of these estimates is unwarranted until either the interior of the SN1987A progenitor is more well understood or additional, large, and heretofore neglected effects, such as the plasma interactions studied by Hardy \& Lasenby \cite{hardy_lasenby17}, are identified.
+We revisit SN1987A constraints on light, hidden sector gauge bosons (``dark photon'') that are coupled to the standard model through kinetic mixing with the photon. These constraints are realized because excessive bremsstrahlung radiation of the dark photon can lead to rapid cooling of the SN1987A progenitor core, in contradiction to the observed neutrinos from that event. The models we consider are of interest as phenomenological models of strongly self-interacting dark matter (SIDM). We clarify several possible ambiguities in the literature and identify errors in prior analyses. We find constraints on the dark photon mixing parameter that are in rough agreement with the early estimates of Dent et al. \cite{dent_etal12}, but only because significant errors in their analyses fortuitously canceled. Our constraints are in good agreement with subsequent analyses by Rrapaj \& Reddy \cite{rrapaj_reddy16} and Hardy \& Lasenby \cite{hardy_lasenby17}. We estimate the dark photon bremsstrahlung rate using one-pion exchange (OPE), while Rrapaj \& Reddy use a soft radiation approximation (SRA) to exploit measured nuclear scattering cross sections. We find that the differences between mixing parameter constraints obtained through the OPE approximation or the SRA approximation are roughly a factor of $\sim 2-3$. Hardy \& Laseby \cite{hardy_lasenby17} include plasma effects in their calculations finding significantly weaker constraints on dark photon mixing for dark photon masses below $\sim 10\, \mathrm{MeV}$. We do not consider plasma effects. Lastly, we point out that the properties of the SN1987A progenitor core remain somewhat uncertain and that this uncertainty alone causes uncertainty of at least a factor or $\sim 2-3$ in the excluded values of the dark photon mixing parameter. Further refinement of these estimates is unwarranted until either the interior of the SN1987A progenitor is more well understood or additional, large, and heretofore neglected effects, such as the plasma interactions studied by Hardy \& Lasenby \cite{hardy_lasenby17}, are identified.
 
 \end{abstract}
 
@@ -423,10 +423,9 @@ where $V$ is the volume of the sphere, and the luminosity per unit mass within t
 \left( \frac{L_{\mathrm{A'}}}{M} \right) = \frac{Q_{\mathrm{pp}} + Q_{\mathrm{pn}}}{\rho}, 
 \end{equation}
 %
-where $\rho = 3 \times 10^{14}\, \mathrm{g/cm}^3$ is the mass density of the core\footnote{
-We use the symbol $\left( L_{\mathrm{A'}}/M \right)$ for the luminosity per unit mass rather than 
-the more conventional symbol $\epsilon_{\mathrm{A'}}$ in order to avoid confusion with the 
-mixing parameter $\varepsilon$.}. Following previous studies, the energy loss rate into novel 
+where $\rho = 3 \times 10^{14}\, \mathrm{g/cm}^3$ is the mass density of the core.
+%\footnote{We use the symbol $\left( L_{\mathrm{A'}}/M \right)$ for the luminosity per unit mass rather than the more conventional symbol $\epsilon_{\mathrm{A'}}$ in order to avoid confusion with the mixing parameter $\varepsilon$.}. 
+Following previous studies, the energy loss rate into novel 
 particles cannot exceed 
 %
 \begin{equation}
@@ -434,16 +433,16 @@ particles cannot exceed
 \end{equation}
 %
 without significantly reducing the duration of the neutrino burst observed at Earth for SN1987A 
-\cite{raffelt96_book}. Writing $(L_{\mathrm{A'}}/M) = \varepsilon^2 I_{\mathrm{A'}}(m_{\mathrm{A'}},T)$, 
+\cite{raffelt96_book}. Writing $\epsilon_{\mathrm{A}'}  = \varepsilon^2 I_{\mathrm{A'}}(m_{\mathrm{A'}},T)$, 
 we delineate the constraint on the dark photon mixing parameter by 
 %
 \begin{equation}
 \label{eq:bound1}
-\varepsilon \lesssim \sqrt{\frac{(L_{\mathrm{max}}/M)}{I_{\mathrm{A}'}(m_{\mathrm{A}'}, T)}}.
+\varepsilon \lesssim \sqrt{\frac{\epsilon_{\mathrm{A}'} }{I_{\mathrm{A}'}(m_{\mathrm{A}'}, T)}}.
 \end{equation}
 %
 At this point, we note that Dent et al. in Ref.~\cite{dent_etal12} took a value of 
-$(L_{\mathrm{max}}/M)$ approximately three orders of magnitude larger than 
+$\epsilon_{\mathrm{A}'} $ approximately three orders of magnitude larger than 
 this generally accepted value. Remarkably, this nearly canceled the errors in their evaluation of 
 $Q_{\mathrm{pp}}$ and $Q_{\mathrm{pn}}$, so that they quote constraints that are 
 within an order of magnitude of the correct result.
@@ -583,8 +582,8 @@ and plugged in to the integral expression for the optical depth to obtain
 \begin{figure*}[th]
 \includegraphics[width=14cm]{compiledbounds_edited.pdf}
 \caption{
-Constraints on dark photon models. The constraint scales according to the assumed, maximal energy loss rate of $\varepsilon_{\mathrm{A}'} = 10^{19}\, \mathrm{erg}\, \mathrm{g}^{-1}\ \mathrm{s}^{-1}$ as shown on the vertical axis label. Our primary result is the excluded region 
-in the $\varepsilon$-$m_{\mathrm{A'}}$ plane shaded in blue. The red curve is our attempt to reproduce exactly Ref.~\cite{dent_etal12}, while the black curve is Ref.~\cite{dent_etal12} but with the correct luminosity constraint.  The purple curve was computed by using the SRA and fixing the cross section through a polynomial fit to nuclear scattering data (e.g., see \cite{rrapaj_reddy16}), while the green curve uses the SRA of the OPE result. 
+Constraints on dark photon models. The constraint scales according to the assumed, maximal energy loss rate of $\epsilon_{\mathrm{A}'} = 10^{19}\, \mathrm{erg}\, \mathrm{g}^{-1}\ \mathrm{s}^{-1}$ as shown on the vertical axis label. Our primary result is the excluded region 
+in the $\varepsilon$-$m_{\mathrm{A'}}$ plane shaded in blue. The red curve is our attempt to reproduce exactly Ref.~\cite{dent_etal12}, while the black curve is Ref.~\cite{dent_etal12} but with the correct luminosity constraint.  The purple curve was computed by using the SRA and fixing the cross section through a polynomial fit to nuclear scattering data (e.g., see \cite{rrapaj_reddy16}), while the green curve uses the SRA of the OPE result.  \akl{Please change vertical axis label by $\varepsilon_{\mathrm A'} \to \epsilon_{\mathrm A'}$ and remove parenthesis. On horizontal axis, put prime over A, not next to the A.}
 }
 \label{fig:constraint}
 \end{figure*}
